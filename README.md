@@ -14,7 +14,7 @@ This asset serves as an example for an HD map. It contains all relevant data, fi
   - `Eyecatcher.png` : Module image
   - `Impression-01.png` : Images for Impression Slideshow
   - `(Video)` : Video about the asset (likely provided via a YouTube link)
-  - **Documentation:**
+- **Documentation:**
   - `Technical-Description.pdf`: Technical description
 - **Validation:**
   - `OpenValidator-Report.txt`: OpenValidator results
