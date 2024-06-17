@@ -43,7 +43,7 @@
       "general:data": {
         "@type": "general:Link",
         "general:url": {
-          "@value": "https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example/blob/main/Data//002_MarktplatzGrafing/ODR-3DM/data/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_offset.xodr",
+          "@value": "https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example/blob/main/Data/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_offset.xodr",
           "@type": "xsd:anyURI"
         },
         "general:type": "Asset"
