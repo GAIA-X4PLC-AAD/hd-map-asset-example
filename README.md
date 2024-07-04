@@ -1,25 +1,33 @@
 # HD-Map Asset Example
 
-This asset serves as an example for an HD map. It contains all relevant data, files, and information necessary to register it within the **GAIA-X4PLC-AAD Ecosystem** and on the **ENVITED Marketplace**, as well as to present and visualize it effectively. It has been aligned with data providers within the GAIA-X4PLC-AAD project and is intended to serve as a reference and template for the HD-Map domain for all ecosystem participants.
+This repo includes a fully described and  consistent example of a HD-Map asset. It contains all relevant data, files, folders, information and requirements of GAIA-X and the ENVITED Dataspace and serves as a reference and example how a data provider has to prepare his HD-Map asset and on the other hand serves as a template for the data consumers to develop appropriate internal processes for further use.  
+
+It is structured by the following folder structure:
 
 ## Folder Structure
 
-- **Data:**
-  - `xodr-file.txt`: XODR file
-- **Visualization:**
-  - `bbox.html`: Bounding Box visualization
-  - `road-network.html`: Road network visualization
-  - `detail-road-network.html`: Detailed road network visualization
-  - `Geojson-file` :  Visualization file for VCS Map WebViewer
-  - `Eyecatcher.png` : Module image
-  - `Impression-01.png` : Images for Impression Slideshow
-  - `(Video)` : Video about the asset (likely provided via a YouTube link)
-- **Documentation:**
-  - `Technical-Description.pdf`: Technical description
-- **Validation:**
-  - `OpenValidator-Report.txt`: OpenValidator results
-- **Metadaten:**
-  - `JSON-LD-File`: Claim file containing all asset metadata, including consistent linking to individual files within the folder structure and links to external data sources (such as YouTube links or the asset file, if hosted externally). The relevant metadata attributes are defined in the **Ontology Management Base Repository** in the Ontology and Shcal-TTL files and are linked within the JSON-LD file.   
+- **metadata:**
+  *Contains all metadata which are necassary to describe this asset, that includes consistent linking to the individual files within this folder structure, all domain sepcific metadata from the [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) and all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be complaient with the [GAIA-X Thrust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/).*
+  
+  - `name-or-did.json`: claim-file.    
+- **data:**
+  *Contains the OpenDRIVE-file or files from the asset. Large files may be only linked here in the repo.*
+  - `name-or-DID.xodr`: XODR-file
+- **visualization:**
+  *Contains all viusalization content from the asset that's includes positionings decribed by a bounding box or maps as well images and videos. Large files may be only linked here in the repo.* 
+  - `bbox.html`: bounding box visualization
+  - `road-network.html`: road network visualization
+  - `detail-road-network.html`: detailed road network visualization
+  - `geojson-file` :  visualization file for VCS Map WebViewer
+  - `eyecatcher.png` : module image
+  - `impression-01.png` : images for impression slideshow
+  - `name.mp4` : video's can also be provided via a link from a diffrent source e.g. YouTube
+- **documentation:**
+  *Contains an instruction as well as technical specification of the asset.* 
+  - `technical-description.pdf`: technical description
+- **validation:**
+  *Contains the result provided in an report-file of the openValidator.* 
+  - `openValidator-report.txt`: openValidator results
 
 
 ## Usage
