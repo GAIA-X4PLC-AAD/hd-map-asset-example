@@ -7,12 +7,12 @@ It is structured by the following folder structure:
 ## Folder Structure
 
 - **metadata:**
-  *Contains all metadata which are necassary to describe this asset, that includes consistent linking to the individual files within this folder structure, all domain sepcific metadata from the [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) and all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be complaient with the [GAIA-X Thrust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/).*
+  *Contains all metadata which are necassary to describe this asset, that includes consistent linking to the individual files within this folder structure, all domain sepcific metadata from the [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) and all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Thrust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/).*
   
   - `name-or-did.json`: claim-file.    
 - **data:**
   *Contains the OpenDRIVE-file or files from the asset. Large files may be only linked here in the repo.*
-  - `name-or-DID.xodr`: XODR-file
+  - `name-or-did.xodr`: XODR-file
 - **visualization:**
   *Contains all viusalization content from the asset that's includes positionings decribed by a bounding box or maps as well images and videos. Large files may be only linked here in the repo.* 
   - `bbox.html`: bounding box visualization
