@@ -53,13 +53,21 @@ For onboarding, an **`asset.zip` - file** with the following folder structure is
 
 - *This manifest file describes the metadata and links associated with a digital asset. It includes a context section defining namespaces for various terms, an identifier (*`@id`*) for the asset, and a type (*`@type`*) indicating it is a manifest. The *`manifest:links`* section contains multiple entries, each specifying a type of link (e.g., asset, data, media) with details such as relative paths, formats, and access roles. Optional metadata and visualization files are also included, with different access roles like *`owner`*,*` registeredUser`*,* and *`publicUser`. 
 
+📄 `domainMetadata.json` : 
+- This JSON file describes the metadata and links associated with a high-definition map (HDMap) used in the Gaia-X project. It includes a context section defining namespaces for various terms, an identifier (@id) for the HDMap, and a type (@type) indicating it is an HDMap. The `general` section provides details such as the name, description, size, contract ID, and recording time of the HDMap. The `links` section contains multiple entries, each specifying a type of link (e.g., asset, metadata, image, document, validation) with details such as URLs and types. The `format` section specifies the type and version of the HDMap format. The `content` section describes road types, lane types, and traffic direction. The `quantity` section provides measurements like length, elevation range, and counts of intersections, traffic lights, and signs. The `quality` section details precision and accuracy metrics. The `dataSource` section lists the data sources and measurement system used. Finally, the `georeference` section provides geolocation information, including the bounding box and geodetic reference system.
+
+
+
+📄 `gxMetadata.json` :
+- This file is used as placeholder. We might want to decribe here all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Thrust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/) 
+
 ## FAQ: 
 ### How can I easily create a manifest file?
-- **Preparation :** *Ensure you have the [SHACL file](https://github.com/ASCS-eV/EVES/tree/onboarding/ontologyManifest/) downloaded. The provided SHACL file defines the structure and constraints for the manifest.*
+- **Preparation :** *Ensure you have the [SHACL file](https://github.com/ASCS-eV/EVES/blob/onboardingAsset/manifest/manifest_shacl.ttl) downloaded. The provided SHACL file defines the structure and constraints for the manifest.*
 
 - **Access the Web Tool :** *Open the [SD Creation Wizard](https://sd-creation-wizard.gxfs.gx4fm.org/select-file) in your web browser.* 
 
-- **Upload the SHACL File :** *Click the button to upload your SHACL file. The tool will analyze the file and extract the relevant information.*
+- **Upload the SHACL - File :** *Click the button to upload your SHACL file. The tool will analyze the file and extract the relevant information.*
 
 - **Configuration :** *After uploading, you may be prompted to enter additional information or configurations. This could include specifying contexts, IDs, or other metadata.* 
 
@@ -76,6 +84,12 @@ For onboarding, an **`asset.zip` - file** with the following folder structure is
 
 - **publicUser** *: A public user has only viewing rights to certain files or metadata.*
 
+### Which SCHAL - Files are used to generate the domainMetadata.json ?
+-You need to use from [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) following SHACL - files: [gx_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/gx/gx_shacl.ttl),[general_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/general/general_shacl.ttl), [georeference_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/georeference/georeference_shacl.ttl) and [hdmap_asset_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/hdmap/hdmap_shacl.ttl). 
+
+
+
+
 ### How does the onboarding of an asset via the ENVITED dataspace work?
 *picture with flowchart*
 
@@ -83,10 +97,10 @@ For onboarding, an **`asset.zip` - file** with the following folder structure is
 
   1. Read the `README.md` - file.
   2. Download the lastest `asset.zip` - file release. 
-  2. Explore the provided data files and documentation.
-  3. Create the same folder and file structure for your asset, along with an appropriate `domainMetadata.json` - file and `manifest.json` - file.
-  4. Zip your fills to an `asset.zip` - file.
-  4. You are now ready to register the asset.
+  3. Explore the provided data files and documentation.
+  4. Create the same folder and file structure for your asset, along with an appropriate `domainMetadata.json` - file and `manifest.json` - file.
+  5. Zip your fills to an `asset.zip` - file.
+  6. You are now ready to upload `asset.zip` - file and start registration of your asset.
 
 
 ## Contact

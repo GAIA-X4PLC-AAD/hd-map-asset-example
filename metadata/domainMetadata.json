@@ -56,7 +56,7 @@
         },
         "general:type": "Metadata"
       },
-?      "general:media": {
+     "general:media": {
         "@type": "general:Link",
         "general:url": {
           "@value": "./asset/metadata/gxMetadata.json",
@@ -150,7 +150,7 @@
       "general:requiredData": {
         "@type": "general:Link"
       },
- ?     "general:relatedData": {
+        "general:relatedData": {
         "@type": "general:Link",
         "general:url": {
           "@value": "did:web:envited.register.market:scenario:0190fed8-aa5b-75fe-b4a8-e513c8ef8c5f",

@@ -62,7 +62,7 @@
       "manifest:accessRole": "registeredUser"     
     },
 
-    ??????????
+  
     "manifest:media": {
       "@type": "manifest:Link",
       "manifest:url": {
@@ -71,7 +71,7 @@
       },
       "manifest:type": "Metadata"
     },
-    ???????????
+ 
 
     "manifest:media": {
       "@type": "manifest:Link",
@@ -163,6 +163,5 @@
       "manifest:format": "json",
       "manifest:accessRole": "registeredUser" 
     }   
-  },
-
 }
+
