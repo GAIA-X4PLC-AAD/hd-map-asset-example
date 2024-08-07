@@ -91,7 +91,8 @@ For onboarding, an **`asset.zip` - file** with the following folder structure is
 
 
 ### How does the onboarding of an asset via the ENVITED dataspace work?
-*picture with flowchart*
+![image](https://github.com/user-attachments/assets/4ec5b2a7-d40c-4af9-b659-56f754244f12)
+
 
 ## Usage
 
