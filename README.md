@@ -2,36 +2,56 @@
 
 This repo serves as a reference for onboarding an HD-Map asset into the data space of ENVITED and can be used as a template for other dataspaces as well.  It contains a fully described and consistent example of an HD-Map asset and an **`manifest.json` - file**.
 
-The **`asset.zip` - file** can be downloaded here in this repo from the lastest release. 
 
-For onboarding, an **`asset.zip` - file** with the following folder structure is required:
+**A complete `ASSET` in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset.** 
 
-## Folder Structure
+The **'ASSET'** has a specific following folder structure and the sample can be downloaded here in this repo from the lastest release (**`asset.zip`**).
 
+# Repo Structure
+
+The Repo has the following structure:
+
+📁 `assetName` *-> Contains all files and data which can be found in the asset.zip release.*
+
+📁 `shaclsAndOntologies`
+*-> Contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata. It also includes the current released versions.*
+
+📄 `CONTRIBUTING.md`
+
+📄 `README.md`
+
+
+
+
+## Asset Folder Structure
+📁 `assetName`
 - 📁 `data`
-  - 📄 `fileName.xodr`
-  - 📄 *`fileName_offset.xodr`* <i style="color:gray;">(optional)</i>
+  - 📄 `assetName.xodr`
+  - 📄 *`assetName_offset.xodr`* <i style="color:gray;">(optional)</i>
 - 📁 `documentation`
-  - 📄 `fileName_technicalDocumentation.pdf`
-  - 📄 *`fileName_technicalDocumentation.txt`* <i style="color:gray;">(optional)</i>
+  - 📄 `assetName_Documentation.pdf`
+  - 📄 *`assetName_Documentation.[ext]`* <i style="color:gray;">(optional)</i>
 - 📁 `metadata`
-  - 📄 `domain_metadata.json`
+  - 📄 `domainMetadata.json`
 - 📁 *`validation`* <i style="color:gray;">(optional)</i>
   - 📄 *`qcReport.txt`* <i style="color:gray;">(optional)</i>
 - 📁 `visualization`
-  - 📄 `fileName_eyecatcher.png`
-  - 📄 `fileName_impression-01.png`
-  - 📄 *`fileName_impression-XX.png`* <i style="color:gray;">(optional)</i>
+  - 📄 `assetName_eyecatcher.png`
+  - 📄 `assetName_impression-01.png`
+  - 📄 *`assetName_impression-XX.png`* <i style="color:gray;">(optional)</i>
   - 📄 `bbox.geojson`
   - 📄 *`roadNetwork.geojson`* <i style="color:gray;">(optional)</i>
   - 📄 *`detailRoadNetwork.geojson`* <i style="color:gray;">(optional)</i>
 - 📄 `LICENSE`
 - 📄 `manifest.json`
 
+## Shacls and Ontologies Folder Structure
+
+
 ### Legend
 
 - 📁 `folderName`: A folder in the repo.
-- 📄 `fileName`: A file in the repo.
+- 📄 `assetName`: A file in the repo.
 -  <i style="color:gray;">(optional)</i> : This file or folder is optional and can be added or omitted as needed.
 
 ### Description of the respective folders:   
