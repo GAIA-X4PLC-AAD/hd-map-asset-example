@@ -22,7 +22,9 @@ jobs:
       run: sudo apt-get install -y zip
 
     - name: Create zip file
-      run: find asset/* -type f | grep -v "README" | zip asset.zip -@
+      run: |
+        cd asset
+        zip -r ../asset.zip ./* -x "README"
  
     - name: Create Release
       id: create_release
