@@ -3,7 +3,7 @@
 This repo serves as a reference for onboarding an HD-Map asset into the data space of ENVITED and can be used as a template for other dataspaces as well.  It contains a fully described and consistent example of an HD-Map asset and an **`manifest.json` - file**.
 
 
-**A complete `ASSET` in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset.** 
+A complete **`ASSET`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset. 
 
 The **'ASSET'** has a specific following folder structure and the sample can be downloaded here in this repo from the lastest release (**`asset.zip`**).
 
@@ -11,14 +11,16 @@ The **'ASSET'** has a specific following folder structure and the sample can be 
 
 The Repo has the following structure:
 
+📁 `.github` *-> github workflows*
+
 📁 `assetName` *-> Contains all files and data which can be found in the asset.zip release.*
 
-📁 `shaclsAndOntologies`
+📁 `Shacls_and_Ontologies`
 *-> Contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata. It also includes the current released versions.*
 
-📄 `CONTRIBUTING.md`
+📄 `CONTRIBUTING.md` *-> contributing guidelines*
 
-📄 `README.md`
+📄 `README.md` *-> documentation of the Repo and the asset*
 
 
 
@@ -30,15 +32,15 @@ The Repo has the following structure:
   - 📄 *`assetName_offset.xodr`* <i style="color:gray;">(optional)</i>
 - 📁 `documentation`
   - 📄 `assetName_Documentation.pdf`
-  - 📄 *`assetName_Documentation.[ext]`* <i style="color:gray;">(optional)</i>
+  - 📄 *`assetName_[Name].[ext]`* <i style="color:gray;">(optional)</i>
 - 📁 `metadata`
   - 📄 `domainMetadata.json`
+  - 📄 `gxMetadata.json`
 - 📁 *`validation`* <i style="color:gray;">(optional)</i>
   - 📄 *`qcReport.txt`* <i style="color:gray;">(optional)</i>
 - 📁 `visualization`
-  - 📄 `assetName_eyecatcher.png`
-  - 📄 `assetName_impression-01.png`
-  - 📄 *`assetName_impression-XX.png`* <i style="color:gray;">(optional)</i>
+  - 📄 `assetName_01.png` *-> eyecatcher*
+  - 📄 *`assetName_[XX].png`* *-> impression* <i style="color:gray;">(optional)</i>
   - 📄 `bbox.geojson`
   - 📄 *`roadNetwork.geojson`* <i style="color:gray;">(optional)</i>
   - 📄 *`detailRoadNetwork.geojson`* <i style="color:gray;">(optional)</i>
