@@ -13,7 +13,7 @@ The Repo has the following structure:
 
 📁 `.github` *-> github workflows*
 
-📁 `assetName` *-> Contains all files and data which can be found in the asset.zip release.*
+📁 `asset` *-> contains the asset*
 
 📁 `Shacls_and_Ontologies`
 *-> Contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata. It also includes the current released versions.*
@@ -26,28 +26,38 @@ The Repo has the following structure:
 
 
 ## Asset Folder Structure
-📁 `assetName`
-- 📁 `data`
-  - 📄 `assetName.xodr`
-  - 📄 *`assetName_offset.xodr`* <i style="color:gray;">(optional)</i>
-- 📁 `documentation`
-  - 📄 `assetName_Documentation.pdf`
-  - 📄 *`assetName_[Name].[ext]`* <i style="color:gray;">(optional)</i>
-- 📁 `metadata`
-  - 📄 `domainMetadata.json`
-  - 📄 `gxMetadata.json`
-- 📁 *`validation`* <i style="color:gray;">(optional)</i>
-  - 📄 *`qcReport.txt`* <i style="color:gray;">(optional)</i>
-- 📁 `visualization`
-  - 📄 `assetName_01.png` *-> eyecatcher*
-  - 📄 *`assetName_[XX].png`* *-> impression* <i style="color:gray;">(optional)</i>
-  - 📄 `bbox.geojson`
-  - 📄 *`roadNetwork.geojson`* <i style="color:gray;">(optional)</i>
-  - 📄 *`detailRoadNetwork.geojson`* <i style="color:gray;">(optional)</i>
-- 📄 `LICENSE`
-- 📄 `manifest.json`
+📁 `asset`
+- 📁 `assetName`
+  - 📁 `data`
+    - 📄 `assetName.xodr`
+    - 📄 *`assetName_offset.xodr`* <i style="color:gray;">(optional)</i>
+  - 📁 `documentation`
+    - 📄 `assetName_Documentation.pdf`
+    - 📄 *`assetName_[Name].[ext]`* <i style="color:gray;">(optional)</i>
+  - 📁 `metadata`
+    - 📄 `domainMetadata.json`
+    - 📄 `gxMetadata.json`
+  - 📁 *`validation`* <i style="color:gray;">(optional)</i>
+    - 📄 *`qcReport.txt`* <i style="color:gray;">(optional)</i>
+  - 📁 `visualization`
+    - 📄 `assetName_01.png` *-> eyecatcher*
+    - 📄 *`assetName_[XX].png`* *-> impression* <i style="color:gray;">(optional)</i>
+    - 📄 `bbox.geojson`
+    - 📄 *`roadNetwork.geojson`* <i style="color:gray;">(optional)</i>
+    - 📄 *`detailRoadNetwork.geojson`* <i style="color:gray;">(optional)</i>
+  - 📄 `LICENSE`
+  - 📄 `manifest.json`
 
 ## Shacls and Ontologies Folder Structure
+📁 `Shacls_and_Ontologies`
+- 📁 `EVES`
+- 📁 `ontology-management-base`
+  - 📁 `hdmap`
+  - 📁 `general`
+  - 📁 `georeference`
+  - 📁 `gx` 
+  - 📁 `marketplaceResource`
+  - 📁 `bundleData` 
 
 
 ### Legend
