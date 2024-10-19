@@ -1,24 +1,24 @@
 {
   "@context": {
-    "general": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/general/",
     "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+    "general": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/general/",
     "sh": "http://www.w3.org/ns/shacl#",
     "hdmap": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/hdmap/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "georeference": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/georeference/"
   },
-  "@id": "did:web:envited.register.market:HdMap:0190fed8-aa5b-75fe-b4a8-e513c8ef8c5f",
+  "@id": "did:web:registry.gaia-x.eu:HdMap:DjHgK5ErTBow1Ya3J05tW9l12skGWgZn6kA9",
   "@type": "hdmap:HdMap",
   "hdmap:general": {
     "@type": "general:General",
     "general:description": {
       "@type": "general:Description",
-      "gx:name": {
-        "@value": "Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_offset",
+      "general:name": {
+        "@value": "TestfeldNiedersachsen_ALKS_ODR_sample",
         "@type": "xsd:string"
       },
-      "gx:description": {
+      "general:description": {
         "@value": "simple hdmap example file on Testfeld Niedersachsen for ALKS scenario",
         "@type": "xsd:string"
       }
@@ -38,131 +38,13 @@
         "@type": "xsd:dateTime"
       }
     },
-    "general:links": {
-      "@type": "general:Links",
-      "general:data_protected": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "./asset.zip",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "Asset"
-      },
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "./asset/metadata/domainMetadata.json",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "Metadata"
-      },
-     "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "./asset/metadata/gxMetadata.json",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "Metadata"
-      },
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "./asset/LICENSE",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "License"
-      },
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "./asset/visualization/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_eyecatcher.png",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "Image"
-      },
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "./asset/visualization/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_impression-01.png",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "Image"
-      },
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-            "@value": "./asset/visualization/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_impression-02.png",
-            "@type": "xsd:anyURI"
-        },
-        "general:type": "Image"
-      },   
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-            "@value": "./asset/visualization/bbox.geojson",
-            "@type": "xsd:anyURI"
-        },
-        "general:type": "3DPreview"
-      }, 
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-            "@value": "./asset/visualization/roadNetwork.geojson",
-            "@type": "xsd:anyURI"
-        },
-        "general:type": "3DPreview"
-      },  
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "./asset/documentation/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_technicalDocumentation.pdf",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "Document"
-      },
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "./asset/documentation/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_technicalDocumentation_stats.txt",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "Document"
-      },
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-            "@value": "./asset/visualization/detailRoadNetwork.geojson",
-            "@type": "xsd:anyURI"
-        },
-        "general:type": "3DPreview"
-      },  
-      "general:media": {
-        "@type": "general:Link",
-        "general:url": {
-            "@value": "./asset/validation/qcReport.txt",
-            "@type": "xsd:anyURI"
-        },
-        "general:type": "Validation"
-      } 
-    },
-    "general:bundleData": {
-      "@type": "general:BundleData",
-      "general:requiredData": {
-        "@type": "general:Link"
-      },
-        "general:relatedData": {
-        "@type": "general:Link",
-        "general:url": {
-          "@value": "did:web:envited.register.market:scenario:0190fed8-aa5b-75fe-b4a8-e513c8ef8c5f",
-          "@type": "xsd:anyURI"
-        },
-        "general:type": "Asset"
-      }
+    "general:range2D": {
+      "@type": "general:Range2D"
     }
   },
   "hdmap:format": {
     "@type": "hdmap:Format",
-    "hdmap:type": "ASAM OpenDRIVE",
+    "hdmap:formatType": "ASAM OpenDRIVE",
     "hdmap:version": {
       "@value": "1.6",
       "@type": "xsd:string"
@@ -170,19 +52,18 @@
   },
   "hdmap:content": {
     "@type": "hdmap:Content",
-    "hdmap:roadTypes": "motorway",
+    "hdmap:roadTypes": "Motorway",
     "hdmap:laneTypes": [
-      "none",
       "shoulder",
       "driving",
       "exit",
-      "border",
+      "none",
       "stop",
       "restricted",
       "entry",
       "walking"
     ],
-    "hdmap:levelOfDetail": "",
+    "hdmap:levelOfDetail": "car",
     "hdmap:trafficDirection": "right-hand"
   },
   "hdmap:quantity": {
@@ -218,7 +99,7 @@
     "hdmap:speedLimit": {
       "@type": "general:Range2D",
       "general:min": {
-        "@value": "250",
+        "@value": "50",
         "@type": "xsd:float"
       },
       "general:max": {
@@ -266,7 +147,7 @@
     }
   },
   "hdmap:georeference": {
-    "@type": "georeference:GeoreferenceShape",
+    "@type": "georeference:Georeference",
     "georeference:projectLocation": {
       "@type": "georeference:ProjectLocation",
       "georeference:country": {
@@ -274,7 +155,7 @@
         "@type": "xsd:string"
       },
       "georeference:state": {
-        "@value": "Lower Saxony",
+        "@value": "DE-NI",
         "@type": "xsd:string"
       },
       "georeference:region": {
@@ -327,6 +208,17 @@
         }
       },
       "georeference:heightSystem": "Orthometric height"
+    }
+  },
+  "hdmap:speedLimit": {
+    "@type": "general:Range2D",
+    "general:min": {
+      "@value": "50",
+      "@type": "xsd:float"
+    },
+    "general:max": {
+      "@value": "250",
+      "@type": "xsd:float"
     }
   }
 }

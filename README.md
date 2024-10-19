@@ -16,7 +16,7 @@ The Repo has the following structure:
 📁 `asset` *-> contains the asset*
 
 📁 `shacls_and_ontologies`
-*-> Contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata. It also includes the current released versions.*
+*-> contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata. It also includes the current released versions.*
 
 📄 `CONTRIBUTING.md` *-> contributing guidelines*
 
