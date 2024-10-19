@@ -1,202 +1,177 @@
 {
-    "@context": {
-      "xsd": "http://www.w3.org/2001/XMLSchema#",
-      "manifest": "https://github.com/ASCS-eV/EVES/tree/onboarding/ontologyManifest/#" ,
-      "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
-      "skos": "http://www.w3.org/2004/02/skos/core#",
-      "sh": "http://www.w3.org/ns/shacl#"
-    },
-    "@id": "did:web:envited.register.market:HdMap:0190fed8-aa5b-75fe-b4a8-e513c8ef8c5f",
-    "@type": "manifest:Manifest",
-  
-    "manifest:links": {
-      "@type": "manifest:Links",
-      "manifest:asset":  {
-          "@type": "manifest:Link",
-          "manifest:relativePath": {
-            "@value": "./asset.zip",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:type": "Asset",
-          "manifest:format": "zip",
-          "manifest:accessRole": "owner"
-        },
-  
-      "manifest:data": [
-        {
-          "@type": "manifest:Link",
-          "manifest:relativePath": {
-            "@value": "./data/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR.xodr",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:type": "Data",
-          "manifest:format": "xodr",
-          "manifest:accessRole": "owner"
-        },
-        {
-          "@type": "manifest:Link",
-          "manifest:relativePath": {
-            "@value": "./data/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_offset.xodr",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:type": "Data",
-          "manifest:format": "xodr",
-          "manifest:accessRole": "owner"
-        }
-      ],
-      "manifest:media": [
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./LICENSE",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "License",
-            "manifest:format": "md",
-            "manifest:accessRole": "publicUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./metadata/domainMetadata.json",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "Metadata",
-            "manifest:format": "json",
-            "manifest:accessRole": "registeredUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./metadata/gxMetadata.json",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "Metadata",
-            "manifest:format": "json",
-            "manifest:accessRole": "registeredUser"
-        },
-        {
-          "@type": "manifest:Link",
-          "manifest:relativePath": {
-            "@value": "./visualization/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_eyecatcher.png",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:type": "Image",
-          "manifest:format": "png",
-          "manifest:accessRole": "publicUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./visualization/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_impression-01.png",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "Image",
-            "manifest:format": "png",
-            "manifest:accessRole": "publicUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./visualization/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_impression-02.png",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "Image",
-            "manifest:format": "png",
-            "manifest:accessRole": "publicUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./visualization/bbox.geojson",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "3DPreview",
-            "manifest:format": "json",
-            "manifest:accessRole": "publicUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./visualization/roadNetwork.geojson",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "3DPreview",
-            "manifest:format": "json",
-            "manifest:accessRole": "publicUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./documentation/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_technicalDocumentation.pdf",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "Document",
-            "manifest:format": "pdf",
-            "manifest:accessRole": "registeredUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./documentation/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_technicalDocumentation_stats.txt",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "Document",
-            "manifest:format": "txt",
-            "manifest:accessRole": "registeredUser"
-        },
-        {
-            "@type": "manifest:Link",
-            "manifest:relativePath": {
-              "@value": "./visualization/detailRoadNetwork.geojson",
-              "@type": "xsd:anyURI"
-            },
-            "manifest:type": "3DPreview",
-            "manifest:format": "json",
-            "manifest:accessRole": "registeredUser"
-        },
-        {
-          "@type": "manifest:Link",
-          "manifest:relativePath": {
-            "@value": "./validation/qcReport.txt",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:type": "Validation",
-          "manifest:format": "txt",
-          "manifest:accessRole": "registeredUser"
-        }
-      ]
-    },
-    "manifest:data": {
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "manifest": "https://github.com/ASCS-eV/EVES/tree/onboarding/ontologyManifest/"
+  },
+  "@id": "did:web:registry.gaia-x.eu:Manifest:ti7GYImopv8XqLHT1tQeDm8XG4AvHCAtEQKs",
+  "@type": "manifest:Manifest",
+  "manifest:data": {
+    "@type": "manifest:Data",
+    "manifest:asset": {
       "@type": "manifest:Link",
+      "manifest:accessRole": "owner",
+      "manifest:type": "Asset",
+      "manifest:format": "zip",
       "manifest:relativePath": {
-        "@value": "./data_offet.xodr",
+        "@value": "./asset.zip",
         "@type": "xsd:anyURI"
-      },
-      "manifest:type": "Data",
-      "manifest:format": "xodr",
-      "manifest:accessRole": "owner"
+      }
     },
-    "manifest:media": [
+    "manifest:assetData": [
       {
         "@type": "manifest:Link",
+        "manifest:accessRole": "owner",
+        "manifest:type": "AssetData",
+        "manifest:format": "xodr",
         "manifest:relativePath": {
-          "@value": "./video.mp4",
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/data/TestfeldNiedersachsen_ALKS_ODR_sample.xodr",
           "@type": "xsd:anyURI"
-        },
-        "manifest:type": "Video",
-        "manifest:format": "mp4",
-        "manifest:accessRole": "registeredUser"
+        }
+      },
+      {
+        "@type": "manifest:Link"
+      },
+      {
+        "@type": "manifest:Link"
       },
       {
         "@type": "manifest:Link",
+        "manifest:accessRole": "owner",
+        "manifest:type": "AssetData",
+        "manifest:format": "xodr",
         "manifest:relativePath": {
-          "@value": "./bild.png",
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/data/TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
           "@type": "xsd:anyURI"
-        },
+        }
+      }
+    ],
+    "manifest:contentData": [
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "publicUser",
+        "manifest:type": "License",
+        "manifest:format": "md",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/LICENSE",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "publicUser",
+        "manifest:type": "Metadata",
+        "manifest:format": "json",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/metadata/domainMetadata.json",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "publicUser",
+        "manifest:type": "Metadata",
+        "manifest:format": "json",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/metadata/gxMetadata.json",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "registeredUser",
+        "manifest:type": "Document",
+        "manifest:format": "pdf",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/documentation/TestfeldNiedersachsen_ALKS_ODR_sample_Documentation.pdf",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "registeredUser",
+        "manifest:type": "Document",
+        "manifest:format": "txt",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/documentation/TestfeldNiedersachsen_ALKS_ODR_sample_Documentation_stats.txt",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "registeredUser",
+        "manifest:type": "Validation",
+        "manifest:format": "txt",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/validation/qcReport.txt",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "publicUser",
         "manifest:type": "Image",
         "manifest:format": "png",
-        "manifest:accessRole": "publicUser"
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/TestfeldNiedersachsen_ALKS_ODR_sample_01.png",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "publicUser",
+        "manifest:type": "Image",
+        "manifest:format": "png",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/TestfeldNiedersachsen_ALKS_ODR_sample_02.png",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "publicUser",
+        "manifest:type": "Image",
+        "manifest:format": "png",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/TestfeldNiedersachsen_ALKS_ODR_sample_03.png",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "publicUser",
+        "manifest:type": "3DPreview",
+        "manifest:format": "geojson",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/bbox.geojson",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "publicUser",
+        "manifest:type": "3DPreview",
+        "manifest:format": "geojson",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/roadNetwork.geojson",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": "registeredUser",
+        "manifest:type": "3DPreview",
+        "manifest:format": "geojson",
+        "manifest:relativePath": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/detailRoadNetwork.geojson",
+          "@type": "xsd:anyURI"
+        }
+      },
+      {
+        "@type": "manifest:Link"
       }
     ]
   }
+ }
