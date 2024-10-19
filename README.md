@@ -3,9 +3,9 @@
 This repo serves as a reference for onboarding an HD-Map asset into the data space of ENVITED and can be used as a template for other dataspaces as well.  It contains a fully described and consistent example of an HD-Map asset and an **`manifest.json` - file**.
 
 
-A complete **`ASSET`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset. 
+A complete **`asset`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset. 
 
-The **'ASSET'** has a specific following folder structure and the sample can be downloaded here in this repo from the lastest release (**`asset.zip`**).
+The **'asset'** has a specific following folder structure and the sample can be downloaded here in this repo from the lastest release (**`asset.zip`**).
 
 # Repo Structure
 
@@ -15,7 +15,7 @@ The Repo has the following structure:
 
 📁 `asset` *-> contains the asset*
 
-📁 `Shacls_and_Ontologies`
+📁 `shacls_and_ontologies`
 *-> Contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata. It also includes the current released versions.*
 
 📄 `CONTRIBUTING.md` *-> contributing guidelines*
@@ -49,7 +49,7 @@ The Repo has the following structure:
   - 📄 `manifest.json`
 
 ## Shacls and Ontologies Folder Structure
-📁 `Shacls_and_Ontologies`
+📁 `shacls_and_ontologies`
 - 📁 `EVES`
 - 📁 `ontology-management-base`
   - 📁 `hdmap`
@@ -58,7 +58,11 @@ The Repo has the following structure:
   - 📁 `gx` 
   - 📁 `marketplaceResource`
   - 📁 `bundleData` 
-
+- 📁 `used-shacls`
+  - 📄 `domainMetadata_shacl.ttl`
+  - 📄 `gxMetadata_shacl.ttl`
+  - 📄 `marketplaceResource_shacl.ttl`
+  - 📄 `manifest_shacl.ttl`  
 
 ### Legend
 
