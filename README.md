@@ -42,7 +42,7 @@ The Repo has the following structure:
   - 📁 `visualization`
     - 📄 `assetName_01.png` *-> eyecatcher (needs to have always public user rights)*
     - 📄 *`assetName_[XX].png`* *-> impression* <i style="color:gray;">(optional)</i>
-    - 📄 `bbox.geojson`
+    - 📄 `bbox.geojson` *(needs to have always public user rights)*
     - 📄 *`roadNetwork.geojson`* <i style="color:gray;">(optional)</i>
     - 📄 *`detailRoadNetwork.geojson`* <i style="color:gray;">(optional)</i>
   - 📄 `LICENSE`
