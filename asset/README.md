@@ -5,7 +5,7 @@ This repo serves as a reference for onboarding an HD-Map asset into the data spa
 
 A complete **`asset`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset. 
 
-The **'asset'** has a specific following folder structure and the sample can be downloaded here in this repo from the lastest release (**`asset.zip`**).
+The **`asset`** has a specific following folder structure and the sample can be downloaded here in this repo from the lastest release (**`asset.zip`**).
 
 
 ## Asset Folder Structure

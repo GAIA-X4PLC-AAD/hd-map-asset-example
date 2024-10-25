@@ -29,10 +29,6 @@
         "@value": "5",
         "@type": "xsd:float"
       },
-      "general:contractId": {
-        "@value": "123456789",
-        "@type": "xsd:string"
-      },
       "general:recordingTime": {
         "@value": "2020-05-26T12:00:00",
         "@type": "xsd:dateTime"
