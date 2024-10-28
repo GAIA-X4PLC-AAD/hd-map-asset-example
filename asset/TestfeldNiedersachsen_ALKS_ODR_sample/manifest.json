@@ -10,16 +10,6 @@
   "@type": "manifest:Manifest",
   "manifest:data": {
     "@type": "manifest:Data",
-    "manifest:asset": {
-      "@type": "manifest:Link",
-      "manifest:accessRole": "owner",
-      "manifest:type": "Asset",
-      "manifest:format": "zip",
-      "manifest:relativePath": {
-        "@value": "./asset.zip",
-        "@type": "xsd:anyURI"
-      }
-    },
     "manifest:assetData": [
       {
         "@type": "manifest:Link",
@@ -27,7 +17,7 @@
         "manifest:type": "AssetData",
         "manifest:format": "xodr",
         "manifest:relativePath": {
-          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/data/TestfeldNiedersachsen_ALKS_ODR_sample.xodr",
+          "@value": "./data/TestfeldNiedersachsen_ALKS_ODR_sample.xodr",
           "@type": "xsd:anyURI"
         }
       },
@@ -37,7 +27,7 @@
         "manifest:type": "AssetData",
         "manifest:format": "xodr",
         "manifest:relativePath": {
-          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/data/TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
+          "@value": "./data/TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
           "@type": "xsd:anyURI"
         }
       }
@@ -49,7 +39,7 @@
       "manifest:type": "License",
       "manifest:format": "md",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/LICENSE",
+        "@value": "./LICENSE",
         "@type": "xsd:anyURI"
       }
     },
@@ -60,7 +50,7 @@
       "manifest:type": "Metadata",
       "manifest:format": "json",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/metadata/domainMetadata.json",
+        "@value": "./metadata/domainMetadata.json",
         "@type": "xsd:anyURI"
       }
     },
@@ -70,17 +60,7 @@
       "manifest:type": "Metadata",
       "manifest:format": "json",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/metadata/domainMetadata.json",
-        "@type": "xsd:anyURI"
-      }
-    },
-    {
-      "@type": "manifest:Link",
-      "manifest:accessRole": "publicUser",
-      "manifest:type": "Metadata",
-      "manifest:format": "json",
-      "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/metadata/gxMetadata.json",
+        "@value": "./metadata/gxMetadata.json",
         "@type": "xsd:anyURI"
       }
     },
@@ -90,7 +70,7 @@
       "manifest:type": "Document",
       "manifest:format": "pdf",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/documentation/TestfeldNiedersachsen_ALKS_ODR_sample_Documentation.pdf",
+        "@value": "./documentation/TestfeldNiedersachsen_ALKS_ODR_sample_Documentation.pdf",
         "@type": "xsd:anyURI"
       }
     },
@@ -100,7 +80,7 @@
       "manifest:type": "Document",
       "manifest:format": "txt",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/documentation/TestfeldNiedersachsen_ALKS_ODR_sample_Documentation_stats.txt",
+        "@value": "./documentation/TestfeldNiedersachsen_ALKS_ODR_sample_Documentation_stats.txt",
         "@type": "xsd:anyURI"
       }
     },
@@ -110,7 +90,7 @@
       "manifest:type": "Validation",
       "manifest:format": "txt",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/validation/qcReport.txt",
+        "@value": "./validation/qcReport.txt",
         "@type": "xsd:anyURI"
       }
     },
@@ -120,7 +100,7 @@
       "manifest:type": "Image",
       "manifest:format": "png",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/TestfeldNiedersachsen_ALKS_ODR_sample_01.png",
+        "@value": "./visualization/TestfeldNiedersachsen_ALKS_ODR_sample_01.png",
         "@type": "xsd:anyURI"
       }
     },
@@ -130,7 +110,7 @@
       "manifest:type": "Image",
       "manifest:format": "png",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/TestfeldNiedersachsen_ALKS_ODR_sample_02.png",
+        "@value": "./visualization/TestfeldNiedersachsen_ALKS_ODR_sample_02.png",
         "@type": "xsd:anyURI"
       }
     },
@@ -140,7 +120,7 @@
       "manifest:type": "Image",
       "manifest:format": "png",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/TestfeldNiedersachsen_ALKS_ODR_sample_03.png",
+        "@value": "./visualization/TestfeldNiedersachsen_ALKS_ODR_sample_03.png",
         "@type": "xsd:anyURI"
       }
     },
@@ -150,7 +130,7 @@
       "manifest:type": "3DPreview",
       "manifest:format": "geojson",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/bbox.geojson",
+        "@value": "./visualization/bbox.geojson",
         "@type": "xsd:anyURI"
       }
     },
@@ -160,7 +140,7 @@
       "manifest:type": "3DPreview",
       "manifest:format": "geojson",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/roadNetwork.geojson",
+        "@value": "./visualization/roadNetwork.geojson",
         "@type": "xsd:anyURI"
       }
     },
@@ -170,7 +150,7 @@
       "manifest:type": "3DPreview",
       "manifest:format": "geojson",
       "manifest:relativePath": {
-        "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample/visualization/detailRoadNetwork.geojson",
+        "@value": "./visualization/detailRoadNetwork.geojson",
         "@type": "xsd:anyURI"
       }
     }
