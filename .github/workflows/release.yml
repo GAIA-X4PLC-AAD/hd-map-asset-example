@@ -24,8 +24,7 @@ jobs:
     - name: Create zip file
       run: |
         cd asset
-        cd TestfeldNiedersachsen_ALKS_ODR_sample
-        zip -r ../../TestfeldNiedersachsen_ALKS_ODR_sample.zip ./*
+        zip -r ../TestfeldNiedersachsen_ALKS_ODR_sample.zip ./*
  
     - name: Create Release
       id: create_release

@@ -1,7 +1,6 @@
-# HD-Map Asset Example
+# TestfeldNiedersachsen_ALKS_ODR_sample
 
 This repo serves as a reference for onboarding an HD-Map asset into the data space of ENVITED and can be used as a template for other dataspaces as well.  It contains a fully described and consistent example of an HD-Map asset and an **`manifest.json` - file**.
-
 
 A complete **`asset`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset. 
 
