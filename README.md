@@ -15,53 +15,30 @@ The Repo has the following structure:
 
 📁 `asset` *-> contains the asset*
 
-📁 `shacls_and_ontologies`
+📁 `shacls-and-ontologies`
 *-> contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata. It also includes the current released versions.*
 
 📄 `CONTRIBUTING.md` *-> contributing guidelines*
 
 📄 `README.md` *-> documentation of the Repo and the asset*
 
-
-
-
 ## Asset Folder Structure
 📁 `asset`
-- 📁 `assetName`
-  - 📁 `data`
-    - 📄 `assetName.xodr`
-    - 📄 *`assetName_offset.xodr`* <i style="color:gray;">(optional)</i>
-  - 📁 `documentation`
-    - 📄 `assetName_Documentation.pdf`
-    - 📄 *`assetName_[Name].[ext]`* <i style="color:gray;">(optional)</i>
-  - 📁 `metadata`
-    - 📄 `domainMetadata.json`
-    - 📄 `gxMetadata.json`
-  - 📁 *`validation`* <i style="color:gray;">(optional)</i>
-    - 📄 *`qcReport.txt`* <i style="color:gray;">(optional)</i>
-  - 📁 `visualization`
-    - 📄 `assetName_01.png` *-> eyecatcher (needs to have always public user rights)*
-    - 📄 *`assetName_[XX].png`* *-> impression* <i style="color:gray;">(optional)</i>
-    - 📄 `bbox.geojson` *(needs to have always public user rights)*
-    - 📄 *`roadNetwork.geojson`* <i style="color:gray;">(optional)</i>
-    - 📄 *`detailRoadNetwork.geojson`* <i style="color:gray;">(optional)</i>
-  - 📄 `LICENSE`
-  - 📄 `manifest.json`
+- 📄 *`README.md`* <i style="color:gray;">(defines asset folder structure)</i>
+- 📄 *`..more..`* <i style="color:gray;">(see folder)</i>
 
 ## Shacls and Ontologies Folder Structure
-📁 `shacls_and_ontologies`
-- 📁 `EVES`
+📁 `shacls-and-ontologies`
 - 📁 `ontology-management-base`
-  - 📁 `hdmap`
   - 📁 `general`
   - 📁 `georeference`
-  - 📁 `gx` 
-  - 📁 `marketplaceResource`
-  - 📁 `bundleData` 
+  - 📁 `gx`
+  - 📁 `hdmap`
+  - 📁 `manifest` 
+  - 📁 `marketplace-info`
+
 - 📁 `used-shacls`
   - 📄 `domainMetadata_shacl.ttl`
-  - 📄 `gxMetadata_shacl.ttl`
-  - 📄 `marketplaceResource_shacl.ttl`
   - 📄 `manifest_shacl.ttl`  
 
 ### Legend
@@ -75,10 +52,7 @@ The Repo has the following structure:
   
 - 📁 `documentation` :   *Contains an instruction as well as technical specification of the asset.* 
 - 📁 `metadata` :   *Contains all metadata which are necassary to describe this asset, that includes all domain sepcific metadata from the [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) (and all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Thrust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/). -> needs to be defined in a next step)* 
-  
-
 - 📁 `validation` :   *Contains the result provided in an report-file of the openValidator.* 
-
 - 📁 `visualization` : *Contains all viusalization content from the asset that's includes positionings decribed by a bounding box or maps as well images and videos. Large files may be only linked here in the repo.* 
 
 ### Description of the respective files: 
@@ -91,8 +65,6 @@ The Repo has the following structure:
 
 📄 `domainMetadata.json` : 
 - *This JSON file describes the metadata and links associated with a high-definition map (HDMap) used in the Gaia-X project. It includes a context section defining namespaces for various terms, an identifier (@id) for the HDMap, and a type (@type) indicating it is an HDMap. The `general` section provides details such as the name, description, size, contract ID, and recording time of the HDMap. The `links` section contains multiple entries, each specifying a type of link (e.g., asset, metadata, image, document, validation) with details such as URLs and types. The `format` section specifies the type and version of the HDMap format. The `content` section describes road types, lane types, and traffic direction. The `quantity` section provides measurements like length, elevation range, and counts of intersections, traffic lights, and signs. The `quality` section details precision and accuracy metrics. The `dataSource` section lists the data sources and measurement system used. Finally, the `georeference` section provides geolocation information, including the bounding box and geodetic reference system.*
-
-
 
 📄 `gxMetadata.json` :
 - *This file is used as placeholder. We might want to decribe here all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Thrust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/)*
