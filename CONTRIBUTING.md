@@ -1,13 +1,9 @@
 # Contributing Guidelines
 
-...
+## Licensing
+MPL 2.0
 
-# Licensing
-
-...
-
-
-# Developer Certification of Origin (DCO)
+## Developer Certification of Origin (DCO)
 
 To make a good faith effort to ensure licensing criteria are met, this project requires the Developer Certificate of Origin (DCO) process to be followed.
 The DCO is an attestation attached to every contribution made by every developer.
