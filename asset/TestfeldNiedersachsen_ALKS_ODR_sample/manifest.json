@@ -14,7 +14,7 @@
       {
         "@type": "manifest:Link",
         "manifest:accessRole": "owner",
-        "manifest:type": "AssetData",
+        "manifest:type": "assetData",
         "manifest:format": "xodr",
         "manifest:relativePath": {
           "@value": "./data/TestfeldNiedersachsen_ALKS_ODR_sample.xodr",
@@ -24,7 +24,7 @@
       {
         "@type": "manifest:Link",
         "manifest:accessRole": "owner",
-        "manifest:type": "AssetData",
+        "manifest:type": "assetData",
         "manifest:format": "xodr",
         "manifest:relativePath": {
           "@value": "./data/TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
@@ -36,7 +36,7 @@
     "manifest:licenseData": {
       "@type": "manifest:Link",
       "manifest:accessRole": "publicUser",
-      "manifest:type": "License",
+      "manifest:type": "license",
       "manifest:format": "md",
       "manifest:relativePath": {
         "@value": "./LICENSE",
@@ -47,7 +47,7 @@
       {
       "@type": "manifest:Link",
       "manifest:accessRole": "publicUser",
-      "manifest:type": "Metadata",
+      "manifest:type": "metadata",
       "manifest:format": "json",
       "manifest:relativePath": {
         "@value": "./metadata/domainMetadata.json",
@@ -57,7 +57,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "publicUser",
-      "manifest:type": "Metadata",
+      "manifest:type": "metadata",
       "manifest:format": "json",
       "manifest:relativePath": {
         "@value": "./metadata/gxMetadata.json",
@@ -67,7 +67,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "registeredUser",
-      "manifest:type": "Document",
+      "manifest:type": "documentation",
       "manifest:format": "pdf",
       "manifest:relativePath": {
         "@value": "./documentation/TestfeldNiedersachsen_ALKS_ODR_sample_Documentation.pdf",
@@ -77,7 +77,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "registeredUser",
-      "manifest:type": "Document",
+      "manifest:type": "documentation",
       "manifest:format": "txt",
       "manifest:relativePath": {
         "@value": "./documentation/TestfeldNiedersachsen_ALKS_ODR_sample_Documentation_stats.txt",
@@ -87,7 +87,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "registeredUser",
-      "manifest:type": "Validation",
+      "manifest:type": "validation",
       "manifest:format": "txt",
       "manifest:relativePath": {
         "@value": "./validation/qcReport.txt",
@@ -97,7 +97,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "publicUser",
-      "manifest:type": "Image",
+      "manifest:type": "visualization",
       "manifest:format": "png",
       "manifest:relativePath": {
         "@value": "./visualization/TestfeldNiedersachsen_ALKS_ODR_sample_01.png",
@@ -107,7 +107,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "publicUser",
-      "manifest:type": "Image",
+      "manifest:type": "visualization",
       "manifest:format": "png",
       "manifest:relativePath": {
         "@value": "./visualization/TestfeldNiedersachsen_ALKS_ODR_sample_02.png",
@@ -117,7 +117,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "publicUser",
-      "manifest:type": "Image",
+      "manifest:type": "visualization",
       "manifest:format": "png",
       "manifest:relativePath": {
         "@value": "./visualization/TestfeldNiedersachsen_ALKS_ODR_sample_03.png",
@@ -127,7 +127,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "publicUser",
-      "manifest:type": "3DPreview",
+      "manifest:type": "visualization",
       "manifest:format": "geojson",
       "manifest:relativePath": {
         "@value": "./visualization/bbox.geojson",
@@ -137,7 +137,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "publicUser",
-      "manifest:type": "3DPreview",
+      "manifest:type": "visualization",
       "manifest:format": "geojson",
       "manifest:relativePath": {
         "@value": "./visualization/roadNetwork.geojson",
@@ -147,7 +147,7 @@
     {
       "@type": "manifest:Link",
       "manifest:accessRole": "registeredUser",
-      "manifest:type": "3DPreview",
+      "manifest:type": "visualization",
       "manifest:format": "geojson",
       "manifest:relativePath": {
         "@value": "./visualization/detailRoadNetwork.geojson",
