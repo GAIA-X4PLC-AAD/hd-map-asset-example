@@ -21,16 +21,16 @@ manifest:DataShape a sh:NodeShape ;
             sh:minCount 1 ;
             sh:name "assetData"@en ;
             sh:node manifest:LinkShape ;
-            sh:order 2 ;
+            sh:order 1 ;
             sh:path manifest:assetData
         ],
         [   skos:example "license type" ;
-            sh:in ("OpenSource" "ProviderSpecific") ;
+            sh:in ("openSource" "providerSpecific") ;
             sh:message "Validation of license type failed!"@en ;
             sh:minCount 1 ;
             sh:maxCount 1 ;
             sh:name "licenseType"@en ;
-            sh:order 3 ;
+            sh:order 2 ;
             sh:path manifest:licenseType 
         ],      
         [   skos:example "link to licenseData" ;
@@ -40,7 +40,7 @@ manifest:DataShape a sh:NodeShape ;
             sh:maxCount 1 ;
             sh:name "licenseData"@en ;
             sh:node manifest:LinkShape ;
-            sh:order 4 ;
+            sh:order 3 ;
             sh:path manifest:licenseData 
         ],
         [   skos:example "screenshot, video, routing, 3d preview" ;
@@ -48,7 +48,7 @@ manifest:DataShape a sh:NodeShape ;
             sh:message "Validation of content failed!"@en ;
             sh:name "contentData"@en ;
             sh:node manifest:LinkShape ;
-            sh:order 5 ;
+            sh:order 4 ;
             sh:path manifest:contentData 
         ];
     sh:targetClass manifest:Data .
@@ -66,7 +66,7 @@ manifest:LinkShape a sh:NodeShape ;
             sh:path manifest:accessRole 
         ],
         [    sh:datatype xsd:string ;
-            sh:in ("data" "documentation" "visualization" "metadata" "validation" "license" "other") ;
+            sh:in ("assetData" "documentation" "visualization" "metadata" "validation" "license" "other") ;
             sh:message "Validation of type failed!"@en ;
             sh:description "Choose type of link." ;
             sh:name "type"@en ;
