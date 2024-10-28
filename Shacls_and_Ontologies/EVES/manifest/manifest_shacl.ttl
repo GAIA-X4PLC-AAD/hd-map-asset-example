@@ -15,17 +15,7 @@ manifest:ManifestShape a sh:NodeShape ;
     
 manifest:DataShape a sh:NodeShape ;
     sh:property 
-        [   skos:example "link to zipped asset folder, e.g. ./asset.zip" ;
-            sh:description "Reference to the asset folder as relativePath"@en ;
-            sh:message "Validation of asset failed!"@en ;
-            sh:minCount 1 ;
-            sh:maxCount 1 ;
-            sh:name "asset"@en ;
-            sh:node manifest:LinkShape ;
-            sh:order 1 ;
-            sh:path manifest:asset 
-        ],
-        [   skos:example "link to valuable data, e.g. ./hdmap.xodr" ;
+        [   skos:example "link to valuable data, e.g. ./data/hdmap.xodr" ;
             sh:description "Reference to valuable data/asset as relativePath or link"@en ;
             sh:message "Validation of data failed!"@en ;
             sh:minCount 1 ;
@@ -53,7 +43,7 @@ manifest:DataShape a sh:NodeShape ;
             sh:order 4 ;
             sh:path manifest:licenseData 
         ],
-        [    skos:example "screenshot, video, routing, 3d preview" ;
+        [   skos:example "screenshot, video, routing, 3d preview" ;
             sh:description "Reference to content data as relativePath"@en ;
             sh:message "Validation of content failed!"@en ;
             sh:name "contentData"@en ;
@@ -76,7 +66,7 @@ manifest:LinkShape a sh:NodeShape ;
             sh:path manifest:accessRole 
         ],
         [    sh:datatype xsd:string ;
-            sh:in ("Document" "Image" "Model" "Routing" "Video" "3DPreview" "Asset" "Metadata" "License" "Validation" "AssetData" "other") ;
+            sh:in ("data" "documentation" "visualization" "metadata" "validation" "license" "other") ;
             sh:message "Validation of type failed!"@en ;
             sh:description "Choose type of link." ;
             sh:name "type"@en ;
