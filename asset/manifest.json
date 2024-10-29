@@ -56,16 +56,6 @@
     },
     {
       "@type": "manifest:Link",
-      "manifest:accessRole": "publicUser",
-      "manifest:type": "metadata",
-      "manifest:format": "json",
-      "manifest:relativePath": {
-        "@value": "./metadata/gxMetadata.json",
-        "@type": "xsd:anyURI"
-      }
-    },
-    {
-      "@type": "manifest:Link",
       "manifest:accessRole": "registeredUser",
       "manifest:type": "documentation",
       "manifest:format": "pdf",
