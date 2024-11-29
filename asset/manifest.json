@@ -138,7 +138,7 @@
   "manifest:license": {
     "@type": "manifest:License",
     "manifest:spdxIdentifier": {
-      "@value": "MIT",
+      "@value": "MPL-2.0",
       "@type": "xsd:string"
     },
     "manifest:licenseData": {
@@ -147,7 +147,7 @@
       "manifest:type": "license",
       "manifest:format": "html",
       "manifest:path": {
-        "@value": "https://opensource.org/license/mit",
+        "@value": "https://www.mozilla.org/en-US/MPL/2.0/",
         "@type": "xsd:anyURI"
       }
     }
