@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<CheckerResults version="v1.0.0-rc.1">
+  <CheckerBundle build_date="2025-01-24" description="OpenDrive checker bundle" name="xodrBundle" version="v1.0.0-rc.1" summary="23 checker(s) are executed. 10 checker(s) are completed. 13 checker(s) are skipped. 0 checker(s) have internal error and 0 checker(s) do not contain status.">
+    <Param name="InputFile" value="E:/Test/uploads/TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr"/>
+    <Param name="resultFile" value="E:/Test/output/TestfeldNiedersachsen_ALKS_ODR_sample_offset/validation/TestfeldNiedersachsen_ALKS_ODR_sample_offset_asam_cb_xodr.xqar"/>
+    <Checker status="completed" checkerId="check_asam_xodr_xml_valid_xml_document" description="The input file must be a valid XML document." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.0.0:xml.valid_xml_document"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_xml_root_tag_is_opendrive" description="The root element of a valid XML document must be OpenSCENARIO." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.0.0:xml.root_tag_is_opendrive"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_xml_fileheader_is_present" description="Below the root element a tag with FileHeader must be defined." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.0.0:xml.fileheader_is_present"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_xml_version_is_defined" description="The FileHeader tag must have the attributes revMajor and revMinor and of type unsignedShort." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.0.0:xml.version_is_defined"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_xml_valid_schema" description="Input xml file must be valid according to the schema." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.0.0:xml.valid_schema"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_road_lane_level_true_one_side" description="Check if there is any @Level=False after being True until the lane border." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:road.lane.level_true_one_side"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_road_lane_access_no_mix_of_deny_or_allow" description="Check if there is mixed content on access rules for the same sOffset on lanes." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:road.lane.access.no_mix_of_deny_or_allow"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_road_lane_link_lanes_across_lane_sections" description="Lanes that continues across the lane sections shall be connected in both directions." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.4.0:road.lane.link.lanes_across_lane_sections"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_road_linkage_is_junction_needed" description="Two roads shall only be linked directly, if the linkage is clear. If the relationship to successor or predecessor is ambiguous, junctions shall be used." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.4.0:road.linkage.is_junction_needed"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_road_lane_link_zero_width_at_start" description="Lanes that have a width of zero at the beginning of the lane section shall have no predecessor element." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:road.lane.link.zero_width_at_start"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_road_lane_link_zero_width_at_end" description="Lanes that have a width of zero at the end of the lane section shall have no successor element." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:road.lane.link.zero_width_at_end"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_road_lane_link_new_lane_appear" description="If a new lane appears besides, only the continuing lane shall be connected to the original lane, not the appearing lane." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.4.0:road.lane.link.new_lane_appear"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_junctions_connection_connect_road_no_incoming_road" description="Connecting roads shall not be incoming roads." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.4.0:junctions.connection.connect_road_no_incoming_road"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_junctions_connection_one_connection_element" description="Each connecting road shall be represented by exactly one element. A connecting road may contain as many lanes as required." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:junctions.connection.one_connection_element"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_junctions_connection_one_link_to_incoming" description="Each connecting road shall be associated with at most one &lt;connection&gt; element per incoming road. A connecting road shall only have the &lt;laneLink&gt; element for that direction." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.8.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.8.0:junctions.connection.one_link_to_incoming"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_junctions_connection_start_along_linkage" description="The value &quot;start&quot; shall be used to indicate that the connecting road runs along the linkage indicated in the element." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:junctions.connection.start_along_linkage"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_junctions_connection_end_opposite_linkage" description="The value &quot;end&quot; shall be used to indicate that the connectingroad runs along the opposite direction of the linkage indicated in the element." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:junctions.connection.end_opposite_linkage"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_road_geometry_parampoly3_length_match" description="The actual curve length, as determined by numerical integration over the parameter range, should match '@Length'." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:road.geometry.parampoly3.length_match"/>
+    </Checker>
+    <Checker status="completed" checkerId="check_asam_xodr_road_lane_border_overlap_with_inner_lanes" description="Lane borders shall not intersect inner lanes." summary="0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.4.0:road.lane.border.overlap_with_inner_lanes"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_road_geometry_parampoly3_arclength_range" description="If @prange='arcLength', p shall be chosen in [0, @Length from geometry]." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:road.geometry.parampoly3.arclength_range"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_road_geometry_parampoly3_normalized_range" description="If @prange='normalized', p shall be chosen in [0, 1]." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:road.geometry.parampoly3.normalized_range"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_performance_avoid_redundant_info" description="Redundant elements should be avoided." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:performance.avoid_redundant_info"/>
+    </Checker>
+    <Checker status="skipped" checkerId="check_asam_xodr_lane_smoothness_contact_point_no_horizontal_gaps" description="Two connected drivable lanes shall have no horizontal gaps." summary="Version 1.6.0 is not valid according to definition setting &gt;=1.7.0. Skip the check. 0 issue(s) are found.">
+      <AddressedRule ruleUID="asam.net:xodr:1.7.0:lane_smoothness.contact_point_no_horizontal_gaps"/>
+    </Checker>
+  </CheckerBundle>
+</CheckerResults>
