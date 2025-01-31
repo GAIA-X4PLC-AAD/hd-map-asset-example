@@ -52,12 +52,12 @@
       "motorway"
     ],
     "hdmap:laneTypes": [
+      "none",
+      "driving",
+      "shoulder",
+      "stop",
       "entry",
       "restricted",
-      "driving",
-      "stop",
-      "none",
-      "shoulder",
       "border",
       "exit"
     ]

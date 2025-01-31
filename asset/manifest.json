@@ -74,7 +74,7 @@
           "@value": "txt"
         },
         "manifest:path": {
-          "@value": "documentation/TestfeldNiedersachsen_ALKS_ODR_sample_offset_Documentation.txt",
+          "@value": "documentation/TestfeldNiedersachsen_ALKS_ODR_sample_offset_Documentation_stats.txt",
           "@type": "xsd:anyURI"
         }
       },
@@ -371,22 +371,22 @@
   "manifest:license": {
     "@type": "manifest:License",
     "manifest:spdxIdentifier": {
-      "@value": "",
+      "@value": "MPL-2.0",
       "@type": "xsd:string"
     },
     "manifest:licenseData": {
       "@type": "manifest:Link",
       "manifest:accessRole": {
-        "@value": "registeredUser"
+        "@value": "publicUser"
       },
       "manifest:type": {
         "@value": "license"
       },
       "manifest:format": {
-        "@value": "other"
+        "@value": "html"
       },
       "manifest:path": {
-        "@value": "LICENSE",
+        "@value": "https://www.mozilla.org/en-US/MPL/2.0/",
         "@type": "xsd:anyURI"
       }
     }
