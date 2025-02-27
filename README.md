@@ -1,13 +1,14 @@
 # HD-Map Asset Example
 
-This repo serves as a reference for onboarding an HD-Map asset into the data space of ENVITED and can be used as a template for other dataspaces as well.  It contains a fully described and consistent example of an HD-Map asset and an **`manifest.json` - file**.
+This repository serves as a reference for onboarding a HD-Map asset into the ENVITED X Dataspace and can be used as a template for other dataspaces as well. It contains the full description and consistent example of an HD-Map asset including a **`manifest.json` - file**.
 
+A complete **`asset`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset.
 
-A complete **`asset`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset. 
+The repository has the following folder structure and the asset sample can be downloaded as artifact from the lastest release (**`asset.zip`**).
 
-The **`asset`** has a specific following folder structure and the sample can be downloaded here in this repo from the lastest release (**`asset.zip`**).
+All ENVITED X Dataspace assets are defined according to [EVES-003](https://ascs-ev.github.io/EVES/EVES-003/eves-003.html).
 
-# Repo Structure
+## Repo Structure
 
 The Repo has the following structure:
 
@@ -23,18 +24,22 @@ The Repo has the following structure:
 📄 `README.md` *-> documentation of the Repo and the asset*
 
 ## Asset Folder Structure
+
 📁 `asset`
+
 - 📄 *`README.md`* <i style="color:gray;">(defines asset folder structure)</i>
 - 📄 *`..more..`* <i style="color:gray;">(see folder)</i>
 
 ## Shacls and Ontologies Folder Structure
+
 📁 `shacls-and-ontologies`
+
 - 📁 `ontology-management-base`
   - 📁 `general`
   - 📁 `georeference`
   - 📁 `gx`
   - 📁 `hdmap`
-  - 📁 `manifest` 
+  - 📁 `manifest`
   - 📁 `marketplace-info`
 
 - 📁 `used-shacls`
@@ -45,17 +50,19 @@ The Repo has the following structure:
 
 - 📁 `folderName`: A folder in the repo.
 - 📄 `assetName`: A file in the repo.
--  <i style="color:gray;">(optional)</i> : This file or folder is optional and can be added or omitted as needed.
+- <i style="color:gray;">(optional)</i> : This file or folder is optional and can be added or omitted as needed.
 
-## FAQ: 
+## FAQ
+
 ### How can I easily create a manifest file?
+
 - **Preparation :** *Ensure you have the [SHACL file](https://github.com/ASCS-eV/EVES/blob/onboardingAsset/manifest/manifest_shacl.ttl) downloaded. The provided SHACL file defines the structure and constraints for the manifest.*
 
-- **Access the Web Tool :** *Open the [SD Creation Wizard](https://sd-creation-wizard.gxfs.gx4fm.org/select-file) in your web browser.* 
+- **Access the Web Tool :** *Open the [SD Creation Wizard](https://sd-creation-wizard.gxfs.gx4fm.org/select-file) in your web browser.*
 
 - **Upload the SHACL - File :** *Click the button to upload your SHACL file. The tool will analyze the file and extract the relevant information.*
 
-- **Configuration :** *After uploading, you may be prompted to enter additional information or configurations. This could include specifying contexts, IDs, or other metadata.* 
+- **Configuration :** *After uploading, you may be prompted to enter additional information or configurations. This could include specifying contexts, IDs, or other metadata.*
 
 - **Generate Manifest :** *The tool will generate a manifest file based on the provided SHACL file and your input. Review the generated data and make any necessary adjustments.*
 
@@ -67,19 +74,20 @@ The Repo has the following structure:
 
 - **registeredUser** *: A registered user has access to certain files and data within the asset but can't download the asset.*
 
-
 - **publicUser** *: A public user has only viewing rights to certain files or metadata.*
 
 ### Which SCHAL - Files are used to generate the domainMetadata.json ?
--You need to use from [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) following SHACL - files: [gx_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/gx/gx_shacl.ttl), [general_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/general/general_shacl.ttl), [georeference_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/georeference/georeference_shacl.ttl) and [hdmap_asset_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/hdmap/hdmap_shacl.ttl). 
+
+-You need to use from [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) following SHACL - files: [gx_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/gx/gx_shacl.ttl), [general_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/general/general_shacl.ttl), [georeference_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/georeference/georeference_shacl.ttl) and [hdmap_asset_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/hdmap/hdmap_shacl.ttl).
 
 ### How does the onboarding of an asset via the ENVITED dataspace work?
+
 ![image](https://github.com/user-attachments/assets/bea9b2ac-9eca-4b30-8164-d76e686cd4a2)
 
 ## Usage
 
   1. Read the `README.md` - file.
-  2. Download the lastest `asset.zip` - file release. 
+  2. Download the lastest `asset.zip` - file release.
   3. Explore the provided data files and documentation.
   4. Create the same folder and file structure for your asset, along with an appropriate `domainMetadata.json` - file and `manifest.json` - file.
   5. Zip your fills to an `asset.zip` - file.

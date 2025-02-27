@@ -1,8 +1,5 @@
 # Contributing Guidelines
 
-## Licensing
-MPL 2.0
-
 ## Developer Certification of Origin (DCO)
 
 To make a good faith effort to ensure licensing criteria are met, this project requires the Developer Certificate of Origin (DCO) process to be followed.
@@ -11,7 +8,7 @@ In the commit message of the contribution, (described more fully later in this d
 When a developer submits a patch, it is a commitment that the contributor has the right to submit the patch per the license.
 The DCO agreement is shown below and online.
 
-```
+```text
 Developer's Certificate of Origin 1.1
 
 By making a contribution to this project, I certify that:
