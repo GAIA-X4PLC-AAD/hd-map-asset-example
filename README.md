@@ -35,12 +35,7 @@ The Repo has the following structure:
 📁 `shacls-and-ontologies`
 
 - 📁 `ontology-management-base`
-  - 📁 `general`
-  - 📁 `georeference`
-  - 📁 `gx`
-  - 📁 `hdmap`
-  - 📁 `manifest`
-  - 📁 `marketplace-info`
+  - git submodule of [ontology-management-base](https://github.com/GAIA-X4PLC-AAD/ontology-management-base)
 
 - 📁 `used-shacls`
   - 📄 `domainMetadata_shacl.ttl`
