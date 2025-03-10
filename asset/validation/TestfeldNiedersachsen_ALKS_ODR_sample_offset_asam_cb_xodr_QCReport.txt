@@ -1,0 +1,278 @@
+====================================================================================================
+QC4OpenX - Pooled results
+====================================================================================================
+
+InputFile: TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr
+
+====================================================================================================
+    CheckerBundle:  xodrBundle
+    Build date:     2025-03-10
+    Build version:  v1.0.0-rc.1
+    Description:    OpenDrive checker bundle
+    Summary:        23 checker(s) are executed. 10 checker(s) are completed. 13 checker(s) are skipped. 0 checker(s) have internal error and 0 checker(s) do not contain status.
+    Parameters:     InputFile = E:/Test/uploads/TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr
+                    resultFile = E:/Test/output/TestfeldNiedersachsen_ALKS_ODR_sample_offset/validation/TestfeldNiedersachsen_ALKS_ODR_sample_offset_asam_cb_xodr.xqar
+
+
+    Checker:        check_asam_xodr_xml_valid_xml_document
+    Description:    The input file must be a valid XML document.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.0.0:xml.valid_xml_document
+
+    Checker:        check_asam_xodr_xml_root_tag_is_opendrive
+    Description:    The root element of a valid XML document must be OpenSCENARIO.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.0.0:xml.root_tag_is_opendrive
+
+    Checker:        check_asam_xodr_xml_fileheader_is_present
+    Description:    Below the root element a tag with FileHeader must be defined.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.0.0:xml.fileheader_is_present
+
+    Checker:        check_asam_xodr_xml_version_is_defined
+    Description:    The FileHeader tag must have the attributes revMajor and revMinor and of type unsignedShort.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.0.0:xml.version_is_defined
+
+    Checker:        check_asam_xodr_xml_valid_schema
+    Description:    Input xml file must be valid according to the schema.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.0.0:xml.valid_schema
+
+    Checker:        check_asam_xodr_road_lane_level_true_one_side
+    Description:    Check if there is any @Level=False after being True until the lane border.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:road.lane.level_true_one_side
+
+    Checker:        check_asam_xodr_road_lane_access_no_mix_of_deny_or_allow
+    Description:    Check if there is mixed content on access rules for the same sOffset on lanes.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:road.lane.access.no_mix_of_deny_or_allow
+
+    Checker:        check_asam_xodr_road_lane_link_lanes_across_lane_sections
+    Description:    Lanes that continues across the lane sections shall be connected in both directions.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.4.0:road.lane.link.lanes_across_lane_sections
+
+    Checker:        check_asam_xodr_road_linkage_is_junction_needed
+    Description:    Two roads shall only be linked directly, if the linkage is clear. If the relationship to successor or predecessor is ambiguous, junctions shall be used.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.4.0:road.linkage.is_junction_needed
+
+    Checker:        check_asam_xodr_road_lane_link_zero_width_at_start
+    Description:    Lanes that have a width of zero at the beginning of the lane section shall have no predecessor element.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:road.lane.link.zero_width_at_start
+
+    Checker:        check_asam_xodr_road_lane_link_zero_width_at_end
+    Description:    Lanes that have a width of zero at the end of the lane section shall have no successor element.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:road.lane.link.zero_width_at_end
+
+    Checker:        check_asam_xodr_road_lane_link_new_lane_appear
+    Description:    If a new lane appears besides, only the continuing lane shall be connected to the original lane, not the appearing lane.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.4.0:road.lane.link.new_lane_appear
+
+    Checker:        check_asam_xodr_junctions_connection_connect_road_no_incoming_road
+    Description:    Connecting roads shall not be incoming roads.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.4.0:junctions.connection.connect_road_no_incoming_road
+
+    Checker:        check_asam_xodr_junctions_connection_one_connection_element
+    Description:    Each connecting road shall be represented by exactly one element. A connecting road may contain as many lanes as required.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:junctions.connection.one_connection_element
+
+    Checker:        check_asam_xodr_junctions_connection_one_link_to_incoming
+    Description:    Each connecting road shall be associated with at most one <connection> element per incoming road. A connecting road shall only have the <laneLink> element for that direction.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.8.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.8.0:junctions.connection.one_link_to_incoming
+
+    Checker:        check_asam_xodr_junctions_connection_start_along_linkage
+    Description:    The value "start" shall be used to indicate that the connecting road runs along the linkage indicated in the element.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:junctions.connection.start_along_linkage
+
+    Checker:        check_asam_xodr_junctions_connection_end_opposite_linkage
+    Description:    The value "end" shall be used to indicate that the connectingroad runs along the opposite direction of the linkage indicated in the element.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:junctions.connection.end_opposite_linkage
+
+    Checker:        check_asam_xodr_road_geometry_parampoly3_length_match
+    Description:    The actual curve length, as determined by numerical integration over the parameter range, should match '@Length'.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:road.geometry.parampoly3.length_match
+
+    Checker:        check_asam_xodr_road_lane_border_overlap_with_inner_lanes
+    Description:    Lane borders shall not intersect inner lanes.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.4.0:road.lane.border.overlap_with_inner_lanes
+
+    Checker:        check_asam_xodr_road_geometry_parampoly3_arclength_range
+    Description:    If @prange='arcLength', p shall be chosen in [0, @Length from geometry].
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:road.geometry.parampoly3.arclength_range
+
+    Checker:        check_asam_xodr_road_geometry_parampoly3_normalized_range
+    Description:    If @prange='normalized', p shall be chosen in [0, 1].
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:road.geometry.parampoly3.normalized_range
+
+    Checker:        check_asam_xodr_performance_avoid_redundant_info
+    Description:    Redundant elements should be avoided.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:performance.avoid_redundant_info
+
+    Checker:        check_asam_xodr_lane_smoothness_contact_point_no_horizontal_gaps
+    Description:    Two connected drivable lanes shall have no horizontal gaps.
+    Status:         skipped
+    Summary:        Version 1.6.0 is not valid according to definition setting >=1.7.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xodr:1.7.0:lane_smoothness.contact_point_no_horizontal_gaps
+====================================================================================================
+
+Rules report 
+
+
+Total number of addressed rules:   23
+	-> Addressed RuleUID: asam.net:xodr:1.0.0:xml.fileheader_is_present
+
+	-> Addressed RuleUID: asam.net:xodr:1.0.0:xml.root_tag_is_opendrive
+
+	-> Addressed RuleUID: asam.net:xodr:1.0.0:xml.valid_schema
+
+	-> Addressed RuleUID: asam.net:xodr:1.0.0:xml.valid_xml_document
+
+	-> Addressed RuleUID: asam.net:xodr:1.0.0:xml.version_is_defined
+
+	-> Addressed RuleUID: asam.net:xodr:1.4.0:junctions.connection.connect_road_no_incoming_road
+
+	-> Addressed RuleUID: asam.net:xodr:1.4.0:road.lane.border.overlap_with_inner_lanes
+
+	-> Addressed RuleUID: asam.net:xodr:1.4.0:road.lane.link.lanes_across_lane_sections
+
+	-> Addressed RuleUID: asam.net:xodr:1.4.0:road.lane.link.new_lane_appear
+
+	-> Addressed RuleUID: asam.net:xodr:1.4.0:road.linkage.is_junction_needed
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:junctions.connection.end_opposite_linkage
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:junctions.connection.one_connection_element
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:junctions.connection.start_along_linkage
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:lane_smoothness.contact_point_no_horizontal_gaps
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:performance.avoid_redundant_info
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:road.geometry.parampoly3.arclength_range
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:road.geometry.parampoly3.length_match
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:road.geometry.parampoly3.normalized_range
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:road.lane.access.no_mix_of_deny_or_allow
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:road.lane.level_true_one_side
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:road.lane.link.zero_width_at_end
+
+	-> Addressed RuleUID: asam.net:xodr:1.7.0:road.lane.link.zero_width_at_start
+
+	-> Addressed RuleUID: asam.net:xodr:1.8.0:junctions.connection.one_link_to_incoming
+
+Total number of rules with found issues:    0
+
+Rules for information:               0
+Rules with warning issues:            0
+Rules with error issues:              0
+====================================================================================================
+
+====================================================================================================
+
+Note
+
+Rule UID format:
+    <emanating-entity>:<standard>:x.y.z:rule_set.for_rules.rule_name
+
+where    
+    Emanating Entity: a domain name for the entity (organization or company) that declares the rule UID
+    Standard: a short string that represents the standard or the domain to which the rule is applied
+    Definition Setting: the version of the standard or the domain to which the rule appears or is applied for the first time
+    Rule Full Name: the full name of the rule, as dot separated, snake lower case string. 
+        The full name of a rule is composed by the rule set, a categorization for the rule, 
+        and the rule name, a unique string inside the categorization. 
+        The rule set can be nested (meaning that can be defined as an 
+        arbitrary sequence of dot separated names, while the name is the snake 
+        case string after the last dot of the full name)
+
+====================================================================================================
+

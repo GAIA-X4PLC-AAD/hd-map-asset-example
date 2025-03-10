@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <CheckerResults version="v1.0.0-rc.1">
-  <CheckerBundle build_date="2025-01-31" description="OpenDrive checker bundle" name="xodrBundle" version="v1.0.0-rc.1" summary="23 checker(s) are executed. 10 checker(s) are completed. 13 checker(s) are skipped. 0 checker(s) have internal error and 0 checker(s) do not contain status.">
+  <CheckerBundle build_date="2025-03-10" description="OpenDrive checker bundle" name="xodrBundle" version="v1.0.0-rc.1" summary="23 checker(s) are executed. 10 checker(s) are completed. 13 checker(s) are skipped. 0 checker(s) have internal error and 0 checker(s) do not contain status.">
     <Param name="InputFile" value="E:/Test/uploads/TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr"/>
     <Param name="resultFile" value="E:/Test/output/TestfeldNiedersachsen_ALKS_ODR_sample_offset/validation/TestfeldNiedersachsen_ALKS_ODR_sample_offset_asam_cb_xodr.xqar"/>
     <Checker status="completed" checkerId="check_asam_xodr_xml_valid_xml_document" description="The input file must be a valid XML document." summary="0 issue(s) are found.">

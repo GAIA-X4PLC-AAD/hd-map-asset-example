@@ -9,14 +9,14 @@
     "georeference": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/georeference/",
     "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
   },
-  "@id": "did:web:envited.register.market:hdmap:None",
+  "@id": "did:web:registry.gaia-x.eu:HdMap:DjHgK5ErTBow1Ya3J05tW9l12skGWgZn6kA9",
   "@type": "hdmap:HdMap",
   "hdmap:general": {
     "@type": "general:General",
     "general:description": {
       "@type": "general:Description",
       "general:name": {
-        "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset",
+        "@value": "simple hdmap example file on Testfeld Niedersachsen for ALKS scenario",
         "@type": "xsd:string"
       },
       "general:description": {
@@ -27,7 +27,7 @@
     "general:data": {
       "@type": "general:Data",
       "general:size": {
-        "@value": 0.0,
+        "@value": 0.6,
         "@type": "xsd:float"
       },
       "general:recordingTime": {
@@ -52,24 +52,97 @@
       "motorway"
     ],
     "hdmap:laneTypes": [
-      "none",
-      "driving",
-      "shoulder",
-      "stop",
+      "exit",
       "entry",
+      "none",
+      "shoulder",
+      "driving",
       "restricted",
       "border",
-      "exit"
-    ]
+      "stop"
+    ],
+    "hdmap:levelOfDetail": "car",
+    "hdmap:trafficDirection": "right-hand"
   },
   "hdmap:quantity": {
-    "@type": "hdmap:Quantity"
+    "@type": "hdmap:Quantity",
+    "hdmap:length": {
+      "@value": "2.68",
+      "@type": "xsd:float"
+    },
+    "hdmap:elevationRange": {
+      "@value": "5.6",
+      "@type": "xsd:float"
+    },
+    "hdmap:numberIntersections": {
+      "@value": "3",
+      "@type": "xsd:unsignedInt"
+    },
+    "hdmap:numberTrafficLights": {
+      "@value": "0",
+      "@type": "xsd:unsignedInt"
+    },
+    "hdmap:numberTrafficSigns": {
+      "@value": "0",
+      "@type": "xsd:unsignedInt"
+    },
+    "hdmap:numberObjects": {
+      "@value": "0",
+      "@type": "xsd:unsignedInt"
+    },
+    "hdmap:numberOutlines": {
+      "@value": "0",
+      "@type": "xsd:unsignedInt"
+    },
+    "hdmap:speedLimit": {
+      "@type": "hdmap:Range2D",
+      "hdmap:min": {
+        "@value": "50",
+        "@type": "xsd:float"
+      },
+      "hdmap:max": {
+        "@value": "250",
+        "@type": "xsd:float"
+      }
+    },
+    "hdmap:rangeOfModeling": {
+      "@value": "0",
+      "@type": "xsd:float"
+    }
   },
-  "hdmap:quality": {
-    "@type": "hdmap:Quality"
+"hdmap:quality": {
+    "@type": "hdmap:Quality",
+    "hdmap:precision": {
+      "@value": "0.01",
+      "@type": "xsd:float"
+    },
+    "hdmap:accuracyLaneModel2d": {
+      "@value": "0.1",
+      "@type": "xsd:float"
+    },
+    "hdmap:accuracyLaneModelHeight": {
+      "@value": "0.1",
+      "@type": "xsd:float"
+    },
+    "hdmap:accuracySignals": {
+      "@value": "0",
+      "@type": "xsd:float"
+    },
+    "hdmap:accuracyObjects": {
+      "@value": "0",
+      "@type": "xsd:float"
+    }
   },
   "hdmap:dataSource": {
-    "@type": "hdmap:DataSource"
+    "@type": "hdmap:DataSource",
+    "hdmap:usedDataSources": {
+      "@value": "laserscanner",
+      "@type": "xsd:string"
+    },
+    "hdmap:measurementSystem": {
+      "@value": "3DMS system",
+      "@type": "xsd:string"
+    }
   },
   "hdmap:georeference": {
     "@type": "georeference:Georeference",
