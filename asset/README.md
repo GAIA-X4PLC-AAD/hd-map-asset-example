@@ -1,6 +1,6 @@
-# TestfeldNiedersachsen_ALKS_ODR_sample_offset
+# TestfeldNiedersachsen_ALKS_ODR_sample
 
-road network
+simple hdmap example file on Testfeld Niedersachsen for ALKS scenario
 
 ## Digital Assets
 
