@@ -49,7 +49,6 @@ You can add sign-offs to multiple commits (including commits originally authored
 If you’ve pushed your changes to GitHub already you’ll need to force push your branch after this with `git push --force-with-lease`.
 If you want to be reminded to add the sign-off for commits in your repository, you can add the following commit-message git hook to your repository:
 
-
 ```bash
 #!/bin/sh
 #

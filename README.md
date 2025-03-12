@@ -8,6 +8,17 @@ The repository has the following folder structure and the asset sample can be do
 
 All ENVITED X Dataspace assets are defined according to [EVES-003](https://ascs-ev.github.io/EVES/EVES-003/eves-003.html).
 
+## Installation
+
+If you want to use the validation scripts from 📁 `ontology-management-base/src` then you need to isntall the following dependencies:
+
+```bash
+sudo apt-get install python3-full
+python3 -m venv ./.venv/
+source .venv/bin/activate
+python3 -m pip install -r /ontology-management-base/src/requirements_ci.txt
+```
+
 ## Repo Structure
 
 The Repo has the following structure:
@@ -16,30 +27,17 @@ The Repo has the following structure:
 
 📁 `asset` *-> contains the asset*
 
-📁 `shacls-and-ontologies`
-*-> contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata. It also includes the current released versions.*
+- 📄 *`README.md`* <i style="color:gray;">(defines asset folder structure)</i>
+- 📄 *`..more..`* <i style="color:gray;">(see folder)</i>
+
+📁 `ontology-management-base`
+
+- contains all SHACLs and ontologies needed for onboarding and registering datasets, including semantic and syntactic validation of the provided metadata.
+- Versioned git submodule of [ontology-management-base](https://github.com/GAIA-X4PLC-AAD/ontology-management-base).
 
 📄 `CONTRIBUTING.md` *-> contributing guidelines*
 
 📄 `README.md` *-> documentation of the Repo and the asset*
-
-## Asset Folder Structure
-
-📁 `asset`
-
-- 📄 *`README.md`* <i style="color:gray;">(defines asset folder structure)</i>
-- 📄 *`..more..`* <i style="color:gray;">(see folder)</i>
-
-## Shacls and Ontologies Folder Structure
-
-📁 `shacls-and-ontologies`
-
-- 📁 `ontology-management-base`
-  - git submodule of [ontology-management-base](https://github.com/GAIA-X4PLC-AAD/ontology-management-base)
-
-- 📁 `used-shacls`
-  - 📄 `domainMetadata_shacl.ttl`
-  - 📄 `manifest_shacl.ttl`  
 
 ### Legend
 
