@@ -1,12 +1,16 @@
 # TestfeldNiedersachsen_ALKS_ODR_sample
 
-This example serves as a reference for onboarding an HD-Map asset into the data space of ENVITED and can be used as a template for other dataspaces as well.  It contains a fully described and consistent example of an HD-Map asset and an **`manifest.json` - file**.
+simple hdmap example file on Testfeld Niedersachsen for ALKS scenario
 
-A complete **`asset`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset.
+## Digital Assets
 
-The **`asset`** has a specific following folder structure and the sample can be downloaded here in this repo from the lastest release (**`asset.zip`**).
+This is a digital asset according to the ENVITED Ecosystem Specification [EVES-003](https://ascs-ev.github.io/EVES/EVES-003/eves-003.html) for the ENVITED-X Data Space. It can be used as a template for other dataspaces as well. It contains a fully described and consistent example of a digital asset including a **`manifest.json` - file** as content registry.
 
-## Asset Folder Structure
+A complete **`digital asset`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset.
+
+## Example Asset Folder Structure
+
+A sample **`digital asset`** can be downloaded from the [GAIA-X4PLC-AAD/hd-map-asset-example](https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example) as artifact of the lastest release (**`asset.zip`**) containing the following structure:
 
 📁 `asset`
 
@@ -22,6 +26,7 @@ The **`asset`** has a specific following folder structure and the sample can be 
 - 📁 *`validation`* <i style="color:gray;">(optional)</i>
   - 📄 *`qcReport.txt`* <i style="color:gray;">(optional)</i>
 - 📁 `visualization`
+  - 📁 `3d_preview` *-> 3d preview files* <i style="color:gray;">(optional)</i>
   - 📄 `assetName_01.png` *-> eyecatcher*
   - 📄 *`assetName_[XX].png`* *-> impression* <i style="color:gray;">(optional)</i>
   - 📄 `bbox.geojson`
@@ -38,11 +43,11 @@ The **`asset`** has a specific following folder structure and the sample can be 
 
 ### Description of the respective folders
 
-- 📁 `data` : *Contains all valuble data files of the asset. Large files may be only linked here in the repo.*
-- 📁 `documentation` :   *Contains an instruction as well as technical specification of the asset.*
-- 📁 `metadata` :   *Contains all metadata which are necassary to describe this asset, that includes all domain sepcific metadata from the [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) (and all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Thrust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/). -> needs to be defined in a next step)*
-- 📁 `validation` :   *Contains the result provided in an report-file of the openValidator.*
-- 📁 `visualization` : *Contains all viusalization content from the asset that's includes positionings decribed by a bounding box or maps as well images and videos. Large files may be only linked here in the repo.*
+- 📁 `data` : *Contains all valuble data files of the asset.*
+- 📁 `documentation` : *Contains an instruction as well as technical specification of the asset.*
+- 📁 `metadata` :   *Contains all metadata which are necassary to describe this asset, that includes all domain sepcific metadata from the [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) (and all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Trust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/). -> needs to be defined in a next step)*
+- 📁 `validation` :   *Contains the results provided by a validation suite.*
+- 📁 `visualization` : *Contains all viusalization content from the asset which includes positionings decribed by a bounding box or maps as well as images and videos.*
 
 ### Description of the respective files
 
@@ -52,12 +57,12 @@ The **`asset`** has a specific following folder structure and the sample can be 
 
 📄 `domainMetadata.json`:
 
-- *This JSON file describes the metadata and links associated with a high-definition map (HDMap) used in the Gaia-X project. It includes a context section defining namespaces for various terms, an identifier (@id) for the HDMap, and a type (@type) indicating it is an HDMap. The `general` section provides details such as the name, description, size, contract ID, and recording time of the HDMap. The `links` section contains multiple entries, each specifying a type of link (e.g., asset, metadata, image, document, validation) with details such as URLs and types. The `format` section specifies the type and version of the HDMap format. The `content` section describes road types, lane types, and traffic direction. The `quantity` section provides measurements like length, elevation range, and counts of intersections, traffic lights, and signs. The `quality` section details precision and accuracy metrics. The `dataSource` section lists the data sources and measurement system used. Finally, the `georeference` section provides geolocation information, including the bounding box and geodetic reference system.*
+- *This JSON file describes the metadata and links associated with a high-definition map (HD map) used in the Gaia-X 4 PLC-AAD project. It includes a context section defining namespaces for various terms, an identifier (@id) for the HD map, and a type (@type) indicating it is an HD map. The `general` section provides details such as the name, description, and recording time of the HD map. The `links` section contains multiple entries, each specifying a type of link (e.g., asset, metadata, image, document, validation) with details such as URLs and types. The `format` section specifies the type and version of the HD map format. The `content` section describes road types, lane types, and traffic direction. The `quantity` section provides measurements like length, elevation range, and counts of intersections, traffic lights, and signs. The `quality` section details precision and accuracy metrics. The `dataSource` section lists the data sources and measurement system used. Finally, the `georeference` section provides geolocation information, including the bounding box and geodetic reference system.*
 
 📄 `gxMetadata.json`:
 
-- *This file is used as placeholder. We might want to decribe here all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Thrust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/)*
+- *The GAIA-X metadata from the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Trust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/)*
 
-## FAQ
+### Create an asset
 
-Get all information [here](https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example)
+You can use the GaiaX 4 PLC-AAD [Provider Services](https://github.com/GAIA-X4PLC-AAD/provider-services) and [Provider Tools](https://github.com/GAIA-X4PLC-AAD/provider-tools) to create your own digital asset.
