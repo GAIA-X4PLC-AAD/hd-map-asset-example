@@ -16,7 +16,9 @@ If you want to use the validation scripts from 📁 `ontology-management-base/sr
 sudo apt-get install python3-full
 python3 -m venv ./.venv/
 source .venv/bin/activate
-python3 -m pip install -r /ontology-management-base/src/requirements_ci.txt
+python3 -m pip install -r ontology-management-base/requirements_ci.txt
+# Example check
+python3 ontology-management-base/src/check_jsonld_against_shacl_schema.py asset/manifest_reference.json ontology-management-base/envited-x/ ontology-management-base/manifest/
 ```
 
 ## Repo Structure
@@ -41,7 +43,7 @@ The Repo has the following structure:
 
 ### Legend
 
-- 📁 `folderName`: A folder in the repo.
+- 📁 `folder-name`: A folder in the repo.
 - 📄 `assetName`: A file in the repo.
 - <i style="color:gray;">(optional)</i> : This file or folder is optional and can be added or omitted as needed.
 
