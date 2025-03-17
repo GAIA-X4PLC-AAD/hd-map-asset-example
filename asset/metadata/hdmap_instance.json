@@ -1,0 +1,230 @@
+{
+  "@context": {
+    "hdmap": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/hdmap/",
+    "envited-x": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/envited-x/",
+    "georeference": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/georeference/",
+    "manifest": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/manifest/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "did:web:registry.gaia-x.eu:HdMap:DjHgK5ErTBow1Ya3J05tW9l12skGWgZn6kA9",
+  "@type": "hdmap:HdMap",
+  "hdmap:hasDataResource": {
+    "@type": "envited-x:DataResource",
+    "gx:name": {
+      "@value": "TestfeldNiedersachsen_ALKS_ODR_sample",
+      "@type": "xsd:string"
+    },
+    "gx:description": {
+      "@value": "simple hdmap example file on Testfeld Niedersachsen for ALKS scenario",
+      "@type": "xsd:string"
+    }
+  },
+  "hdmap:hasDataResourceExtension": {
+    "@type": "hdmap:DataResourceExtension",
+    "hdmap:hasFormat": {
+      "@type": "hdmap:Format",
+      "hdmap:formatType": "ASAM OpenDRIVE",
+      "hdmap:version": {
+        "@value": "1.6",
+        "@type": "xsd:string"
+      }
+    },
+    "hdmap:hasContent": {
+      "@type": "hdmap:Content",
+      "hdmap:roadTypes": [
+        "motorway"
+      ],
+      "hdmap:laneTypes": [
+        "exit",
+        "entry",
+        "none",
+        "shoulder",
+        "driving",
+        "restricted",
+        "border",
+        "stop"
+      ],
+      "hdmap:levelOfDetail": "car",
+      "hdmap:trafficDirection": "right-hand"
+    },
+    "hdmap:hasQuantity": {
+      "@type": "hdmap:Quantity",
+      "hdmap:length": {
+        "@value": "2.68",
+        "@type": "xsd:float"
+      },
+      "hdmap:elevationRange": {
+        "@value": "5.6",
+        "@type": "xsd:float"
+      },
+      "hdmap:numberIntersections": {
+        "@value": "3",
+        "@type": "xsd:unsignedInt"
+      },
+      "hdmap:numberTrafficLights": {
+        "@value": "0",
+        "@type": "xsd:unsignedInt"
+      },
+      "hdmap:numberTrafficSigns": {
+        "@value": "0",
+        "@type": "xsd:unsignedInt"
+      },
+      "hdmap:numberObjects": {
+        "@value": "0",
+        "@type": "xsd:unsignedInt"
+      },
+      "hdmap:numberOutlines": {
+        "@value": "0",
+        "@type": "xsd:unsignedInt"
+      },
+      "hdmap:speedLimit": {
+        "@type": "hdmap:Range2D",
+        "hdmap:min": {
+          "@value": "50",
+          "@type": "xsd:float"
+        },
+        "hdmap:max": {
+          "@value": "250",
+          "@type": "xsd:float"
+        }
+      },
+      "hdmap:rangeOfModeling": {
+        "@value": "0",
+        "@type": "xsd:float"
+      }
+    },
+    "hdmap:hasQuality": {
+      "@type": "hdmap:Quality",
+      "hdmap:precision": {
+        "@value": "0.01",
+        "@type": "xsd:float"
+      },
+      "hdmap:accuracyLaneModel2d": {
+        "@value": "0.1",
+        "@type": "xsd:float"
+      },
+      "hdmap:accuracyLaneModelHeight": {
+        "@value": "0.1",
+        "@type": "xsd:float"
+      },
+      "hdmap:accuracySignals": {
+        "@value": "0",
+        "@type": "xsd:float"
+      },
+      "hdmap:accuracyObjects": {
+        "@value": "0",
+        "@type": "xsd:float"
+      }
+    },
+    "hdmap:hasDataSource": {
+      "@type": "hdmap:DataSource",
+      "hdmap:usedDataSources": {
+        "@value": "laserscanner",
+        "@type": "xsd:string"
+      },
+      "hdmap:measurementSystem": {
+        "@value": "3DMS system",
+        "@type": "xsd:string"
+      }
+    },
+    "hdmap:hasGeoreference": {
+      "@type": "georeference:Georeference",
+      "georeference:hasProjectLocation": {
+        "@type": "georeference:ProjectLocation",
+        "georeference:state": {
+          "@value": "DE-NI",
+          "@type": "xsd:string"
+        },
+        "georeference:city": {
+          "@value": "Koenigslutter am Elm",
+          "@type": "xsd:string"
+        },
+        "georeference:region": {
+          "@value": "Landkreis Helmstedt",
+          "@type": "xsd:string"
+        },
+        "georeference:country": {
+          "@value": "DE",
+          "@type": "xsd:string"
+        },
+        "georeference:hasBoundingBox": {
+          "@type": "georeference:BoundingBox",
+          "georeference:xMin": {
+            "@value": "10.720740862799195",
+            "@type": "xsd:float"
+          },
+          "georeference:yMin": {
+            "@value": "52.29672229543727",
+            "@type": "xsd:float"
+          },
+          "georeference:xMax": {
+            "@value": "10.730432209669724",
+            "@type": "xsd:float"
+          },
+          "georeference:yMax": {
+            "@value": "52.31580272353997",
+            "@type": "xsd:float"
+          }
+        }
+      },
+      "georeference:hasGeodeticReferenceSystem": {
+        "@type": "georeference:GeodeticReferenceSystem",
+        "georeference:hasOrigin": {
+          "@type": "georeference:LatLonCoordinate",
+          "georeference:lat": {
+            "@value": "52.275329463992996",
+            "@type": "xsd:float"
+          },
+          "georeference:lon": {
+            "@value": "10.685571633942278",
+            "@type": "xsd:float"
+          }
+        },
+        "georeference:coordinateSystemName": {
+          "@value": "tmerc",
+          "@type": "xsd:string"
+        }
+      }
+    }
+  },
+  "hdmap:hasManifest": {
+    "@type": "manifest:Link",
+    "manifest:iri": {
+      "@id": "did:web:registry.gaia-x.eu:Manifest:ZNh9Z-tHQpkpxJhNobhUVmauYxrfTAZdQy9L"
+    },
+    "skos:note": {
+      "@value": "Ensure that 'manifest_reference.json' contains all required categories: simulationData, documentation, metadata, media.",
+      "@type": "xsd:string"
+    },
+    "sh:conformsTo": [
+      {
+        "@id": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/envited-x/"
+      },
+      {
+        "@id": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/manifest/"
+      }
+    ],
+    "manifest:hasAccessRole": {
+      "@type": "manifest:AccessRole",
+      "@id": "envited-x:isPublic"
+    },
+    "manifest:hasCategory": {
+      "@type": "manifest:Category",
+      "@id": "envited-x:isManifest"
+    },
+    "manifest:hasFileMetadata": {
+      "@type": "manifest:FileMetadata",
+      "manifest:filePath": {
+        "@value": "./manifest_reference.json",
+        "@type": "xsd:anyURI"
+      },
+      "manifest:mimeType": {
+        "@value": "application/ld+json",
+        "@type": "xsd:string"
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ A sample **`digital asset`** can be downloaded from the [GAIA-X4PLC-AAD/hd-map-a
 
 📁 `asset`
 
-- 📁 `data`
+- 📁 `simulation-data`
   - 📄 `assetName.xodr`
   - 📄 *`assetName_offset.xodr`* <i style="color:gray;">(optional)</i>
 - 📁 `documentation`
@@ -23,9 +23,9 @@ A sample **`digital asset`** can be downloaded from the [GAIA-X4PLC-AAD/hd-map-a
 - 📁 `metadata`
   - 📄 `domainMetadata.json`
   - 📄 `gxMetadata.json`
-- 📁 *`validation`* <i style="color:gray;">(optional)</i>
+- 📁 *`validation-reports`* <i style="color:gray;">(optional)</i>
   - 📄 *`qcReport.txt`* <i style="color:gray;">(optional)</i>
-- 📁 `visualization`
+- 📁 `media`
   - 📁 `3d_preview` *-> 3d preview files* <i style="color:gray;">(optional)</i>
   - 📄 `assetName_01.png` *-> eyecatcher*
   - 📄 *`assetName_[XX].png`* *-> impression* <i style="color:gray;">(optional)</i>
@@ -37,17 +37,17 @@ A sample **`digital asset`** can be downloaded from the [GAIA-X4PLC-AAD/hd-map-a
 
 ### Legend
 
-- 📁 `folderName`: A folder in the repo.
+- 📁 `folder-name`: A folder in the repo.
 - 📄 `assetName`: A file in the repo.
 -  <i style="color:gray;">(optional)</i> : This file or folder is optional and can be added or omitted as needed.
 
 ### Description of the respective folders
 
-- 📁 `data` : *Contains all valuble data files of the asset.*
+- 📁 `simulation-data` : *Contains all valuble data files of the asset.*
 - 📁 `documentation` : *Contains an instruction as well as technical specification of the asset.*
 - 📁 `metadata` :   *Contains all metadata which are necassary to describe this asset, that includes all domain sepcific metadata from the [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) (and all GAIA-X metadata form the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Trust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/). -> needs to be defined in a next step)*
-- 📁 `validation` :   *Contains the results provided by a validation suite.*
-- 📁 `visualization` : *Contains all viusalization content from the asset which includes positionings decribed by a bounding box or maps as well as images and videos.*
+- 📁 `validation-reports` :   *Contains the results provided by a validation suite.*
+- 📁 `media` : *Contains all viusalization content from the asset which includes positionings decribed by a bounding box or maps as well as images and videos.*
 
 ### Description of the respective files
 
