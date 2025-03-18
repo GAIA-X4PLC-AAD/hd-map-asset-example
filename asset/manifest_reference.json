@@ -1,8 +1,7 @@
 {
   "@context": {
-    "envited-x": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/envited-x/",
-    "manifest": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/manifest/",
-    "hdmap": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/hdmap/",
+    "envited-x": "https://ontologies.envited-x.net/envited-x/v2/ontology#",
+    "manifest": "https://ontologies.envited-x.net/manifest/v4/ontology#",
     "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
     "sh": "http://www.w3.org/ns/shacl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -156,7 +155,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isPublic"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -228,7 +227,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isPublic"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -258,7 +257,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isValidationReport"
+        "@id": "envited-x:isPublic"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -288,7 +287,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isValidationReport"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -344,7 +343,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isPublic"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -370,7 +369,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -396,7 +395,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -422,7 +421,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -448,7 +447,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -474,7 +473,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -500,7 +499,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -526,7 +525,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -552,7 +551,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -578,7 +577,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -604,7 +603,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -630,7 +629,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -656,7 +655,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -682,7 +681,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isMedia"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
@@ -708,7 +707,7 @@
       "@type": "manifest:Link",
       "manifest:hasAccessRole": {
         "@type": "manifest:AccessRole",
-        "@id": "envited-x:isValidationReport"
+        "@id": "envited-x:isRegistered"
       },
       "manifest:hasCategory": {
         "@type": "manifest:Category",
