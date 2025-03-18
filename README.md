@@ -14,11 +14,12 @@ If you want to use the validation scripts from 📁 `ontology-management-base/sr
 
 ```bash
 sudo apt-get install python3-full
-python3 -m venv ./.venv/
-source .venv/bin/activate
-python3 -m pip install -r ontology-management-base/requirements_ci.txt
+python3 -m venv ./.venv/ # On Windows use python instead of python3
+source .venv/bin/activate # On Windows use: source .venv/Scripts/activate
+python3 -m pip install -r ontology-management-base/requirements.txt
 # Example check
-python3 ontology-management-base/src/check_jsonld_against_shacl_schema.py asset/manifest_reference.json ontology-management-base/envited-x/ ontology-management-base/manifest/
+python3 src/check_jsonld_against_shacl_schema.py ../asset/manifest_reference.json
+python3 src/check_jsonld_against_shacl_schema.py ../asset/metadata/hdmap_instance.json
 ```
 
 ## Repo Structure
