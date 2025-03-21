@@ -67,7 +67,7 @@ The Repo has the following structure:
 
 ### Which SCHAL - Files are used to generate the domainMetadata.json ?
 
--You need to use the following Ontology from [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) - [hdmap_asset_shacl](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/hdmap/hdmap_ontology.ttl).
+-You need to use the following Ontology from [Ontology Management Base Repository](https://github.com/GAIA-X4PLC-AAD/ontology-management-base) - [HdMap_Ontology](https://github.com/GAIA-X4PLC-AAD/ontology-management-base/blob/main/hdmap/hdmap_ontology.ttl).
 
 ## Usage
 
