@@ -21,8 +21,7 @@ A sample **`digital asset`** can be downloaded from the [GAIA-X4PLC-AAD/hd-map-a
   - 📄 `assetName_Documentation.pdf`
   - 📄 *`assetName_[Name].[ext]`* <i style="color:gray;">(optional)</i>
 - 📁 `metadata`
-  - 📄 `domainMetadata.json`
-  - 📄 `gxMetadata.json`
+  - 📄 `hdmap_instance.json`
 - 📁 *`validation-reports`* <i style="color:gray;">(optional)</i>
   - 📄 *`qcReport.txt`* <i style="color:gray;">(optional)</i>
 - 📁 `media`
@@ -51,17 +50,13 @@ A sample **`digital asset`** can be downloaded from the [GAIA-X4PLC-AAD/hd-map-a
 
 ### Description of the respective files
 
-📄 `manifest.json`:
+📄 `manifest_reference.json`:
 
-- *This manifest file defined the link structure depending on the domain sepecific asset.zip. It includes a context section defining namespaces for various terms, an identifier (`@id`) for the asset, and a type (`@type`) indicating it is a manifest. The `manifest:links` section contains multiple entries, each specifying a type of link (e.g., asset, data, media) with details such as relative paths, formats, and access roles. Optional metadata and visualization files are also included, with different access roles like `owner`,`registeredUser`, and `publicUser`.*
+- *This manifest file defined the link structure depending on the domain sepecific asset.zip. It includes a context section defining namespaces for various terms, an identifier (`@id`) for the asset, and a type (`@type`) indicating it is a manifest. The `manifest:links` section contains multiple entries, each specifying a type of link (e.g., license, simulation-data, media) with details such as relative paths, formats, and access roles. Optional metadata and visualization files are also included, with different access roles like `isOwner`,`isRegistered`, and `isPublic`.*
 
-📄 `domainMetadata.json`:
+📄 `hdmap_instance.json` (domain metadata):
 
-- *This JSON file describes the metadata and links associated with a high-definition map (HD map) used in the Gaia-X 4 PLC-AAD project. It includes a context section defining namespaces for various terms, an identifier (@id) for the HD map, and a type (@type) indicating it is an HD map. The `general` section provides details such as the name, description, and recording time of the HD map. The `links` section contains multiple entries, each specifying a type of link (e.g., asset, metadata, image, document, validation) with details such as URLs and types. The `format` section specifies the type and version of the HD map format. The `content` section describes road types, lane types, and traffic direction. The `quantity` section provides measurements like length, elevation range, and counts of intersections, traffic lights, and signs. The `quality` section details precision and accuracy metrics. The `dataSource` section lists the data sources and measurement system used. Finally, the `georeference` section provides geolocation information, including the bounding box and geodetic reference system.*
-
-📄 `gxMetadata.json`:
-
-- *The GAIA-X metadata from the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Trust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/)*
+- *This JSON file describes the metadata and links associated with a high-definition map (HD map) used in the Gaia-X 4 PLC-AAD project. It includes a context section defining namespaces for various terms, an identifier (@id) for the HD map, and a type (@type) indicating it is an HD map. The `DataResource` section provides details such as the name, description, and the GAIA-X metadata from the [gaia-x-compliant-claims-example](https://github.com/GAIA-X4PLC-AAD/gaia-x-compliant-claims-example) to be compliant with the [GAIA-X Trust Framework](https://docs.gaia-x.eu/policy-rules-committee/trust-framework/22.10/). The `manifest` section contains multiple entries, each specified by a category of link (e.g., simulation-data, metadata, media, documentation, validation-report) with details such as URLs and types. The `format` section specifies the type and version of the HD map format. The `content` section describes road types, lane types, and traffic direction. The `quantity` section provides measurements like length, elevation range, and counts of intersections, traffic lights, and signs. The `quality` section details precision and accuracy metrics. The `dataSource` section lists the data sources and measurement system used. Finally, the `georeference` section provides geolocation information, including the bounding box and geodetic reference system.*
 
 ### Create an asset
 
