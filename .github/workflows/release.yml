@@ -12,6 +12,10 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+          lfs: true
+    - name: Checkout LFS objects
+      run: git lfs checkout
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
@@ -24,7 +28,7 @@ jobs:
     - name: Create zip file
       run: |
         cd asset
-        zip -r ../TestfeldNiedersachsen_ALKS_ODR_sample.zip ./*
+        zip -r ../Testfeld_Niedersachsen_ALKS_xodr_sample.zip ./*
  
     - name: Create Release
       id: create_release
