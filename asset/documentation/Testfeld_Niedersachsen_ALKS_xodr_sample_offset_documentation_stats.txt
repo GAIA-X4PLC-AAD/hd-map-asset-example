@@ -1,0 +1,80 @@
+FILEINFO:
+###################################################################################################################################
+        File name                                      :                 Testfeld_Niedersachsen_ALKS_xodr_sample_offset.xodr        
+        File size                                  [MB]:                 0.62                 
+
+
+
+
+
+
+STATS Road network:
+###################################################################################################################################
+        Road network length                        [km]:                2.68
+        Road count                                     :                   6
+        Path count                                     :                   7
+        Number of Junctions                            :                   3
+        Junction connections min count                 :                   2
+        Junction connections max count                 :                   2
+        Junction connections avg count                 :                2.00
+
+        Length roads                                [m]:                2627
+        Length junction pathes                      [m]:                  54
+        Road length min                             [m]:                  21
+        Road length max                             [m]:                1192
+        Path length min                             [m]:                   7
+        Path length max                             [m]:                  10
+        Road radius min                             [m]:               12.54
+        Road elevation min                          [m]:               94.28
+        Road elevation max                          [m]:               99.88
+        Road elevation avg                          [m]:               97.52
+        Road elevation range                        [m]:                5.60
+        Road slope max                              [�]:                0.02
+        Road slope avg                              [�]:                0.00
+
+        Road types included                            :              motorway
+
+
+
+
+STATS Lanes:
+###################################################################################################################################
+        Road (drivable area) width min              [m]:                3.61
+        Road (drivable area) width max              [m]:               13.86
+        Driving lane width max                      [m]:                5.27
+        Driving lane width min                      [m]:                0.00
+        Lane layouts (driving_lanes)                   :                0:2,0:1,0:3,0:4
+        Driving lane count min                         :                   1
+        Driving lane count max                         :                   4
+        Driving lane count (one direction) min         :                   1
+        Driving lane count (one direction) max         :                   4
+        Lane speed min                            [km/h]:               250.0
+        Lane speed max                            [km/h]:               250.0
+        Lane types included                            :                none,shoulder,driving,exit,border,stop,restricted,entry
+
+
+
+
+STATS Objects:
+###################################################################################################################################
+
+       count      type                 subType              name                 attributes                                 geometry             (attributes-repeat)
+       -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+       ----      
+       0          total
+
+       Tunnel / Bridge
+       -----------------------------------------
+       0          tunnel               (0.00m total length)
+       0          bridge               (0.00m total length)
+
+
+
+
+STATS Signals:
+###################################################################################################################################
+
+       count      type                 subType              name                
+       -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+       ----      
+       0          total

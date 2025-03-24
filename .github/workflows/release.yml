@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout repository (+ download lfs dependencies)
       uses: actions/checkout@v4
       with:
           lfs: true
@@ -47,6 +47,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./TestfeldNiedersachsen_ALKS_ODR_sample.zip
-        asset_name: TestfeldNiedersachsen_ALKS_ODR_sample.zip
+        asset_path: ./Testfeld_Niedersachsen_ALKS_xodr_sample.zip
+        asset_name: Testfeld_Niedersachsen_ALKS_xodr_sample.zip
         asset_content_type: application/zip

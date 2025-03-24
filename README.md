@@ -19,8 +19,7 @@ python3 -m venv .venv/
 source .venv/bin/activate # On Windows use: source .venv/Scripts/activate
 python3 -m pip install -r ontology-management-base/requirements.txt
 # Example check
-python3 ontology-management-base/src/check_jsonld_against_shacl_schema.py asset/manifest_reference.json
-python3 ontology-management-base/src/check_jsonld_against_shacl_schema.py asset/metadata/hdmap_instance.json
+python3 ontology-management-base/src/check_jsonld_against_shacl_schema.py asset/manifest_reference.json asset/metadata/hdmap_instance.json
 ```
 
 ## Repo Structure

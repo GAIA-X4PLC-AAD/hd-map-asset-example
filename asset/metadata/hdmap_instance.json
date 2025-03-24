@@ -14,7 +14,7 @@
   "hdmap:hasDataResource": {
     "@type": "envited-x:DataResource",
     "gx:name": {
-      "@value": "Testfeld Niedersachsen ALKS xodr sample",
+      "@value": "Testfeld Niedersachsen ALKS xodr sample offset",
       "@type": "xsd:string"
     },
     "gx:description": {

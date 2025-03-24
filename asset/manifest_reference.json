@@ -74,7 +74,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./simulation-data/TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
+          "@value": "./simulation-data/Testfeld_Niedersachsen_ALKS_xodr_sample_offset.xodr",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -86,7 +86,7 @@
           "@type": "xsd:integer"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset.xodr",
           "@type": "xsd:string"
         }
       }
@@ -104,7 +104,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./simulation-data/TestfeldNiedersachsen_ALKS_ODR_sample_offset.bjson",
+          "@value": "./simulation-data/Testfeld_Niedersachsen_ALKS_xodr_sample_offset.bjson",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -116,7 +116,7 @@
           "@type": "xsd:integer"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset.bjson",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset.bjson",
           "@type": "xsd:string"
         }
       }
@@ -134,7 +134,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./documentation/TestfeldNiedersachsen_ALKS_ODR_sample_offset_Documentation.pdf",
+          "@value": "./documentation/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_documentation.pdf",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -146,7 +146,7 @@
           "@type": "xsd:integer"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_Documentation.pdf",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_documentation.pdf",
           "@type": "xsd:string"
         }
       }
@@ -164,7 +164,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./documentation/TestfeldNiedersachsen_ALKS_ODR_sample_offset_Documentation_stats.txt",
+          "@value": "./documentation/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_documentation_stats.txt",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -176,7 +176,7 @@
           "@type": "xsd:integer"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_Documentation_stats.txt",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_documentation_stats.txt",
           "@type": "xsd:string"
         }
       }
@@ -236,7 +236,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./validation-reports/TestfeldNiedersachsen_ALKS_ODR_sample_offset_asam_cb_xodr.xqar",
+          "@value": "./validation-reports/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_asam_cb_xodr.xqar",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -248,7 +248,7 @@
           "@type": "xsd:integer"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_asam_cb_xodr.xqar",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_asam_cb_xodr.xqar",
           "@type": "xsd:string"
         }
       }
@@ -266,7 +266,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./validation-reports/TestfeldNiedersachsen_ALKS_ODR_sample_offset_asam_cb_xodr_QCReport.txt",
+          "@value": "./validation-reports/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_asam_cb_xodr_QCReport.txt",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -278,7 +278,7 @@
           "@type": "xsd:integer"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_asam_cb_xodr_QCReport.txt",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_asam_cb_xodr_QCReport.txt",
           "@type": "xsd:string"
         }
       }
@@ -296,7 +296,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./validation-reports/TestfeldNiedersachsen_ALKS_ODR_sample_offset_openmsl_cb_xodr.xqar",
+          "@value": "./validation-reports/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_openmsl_cb_xodr.xqar",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -308,7 +308,7 @@
           "@type": "xsd:integer"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_openmsl_cb_xodr.xqar",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_openmsl_cb_xodr.xqar",
           "@type": "xsd:string"
         }
       }
@@ -352,7 +352,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./media/TestfeldNiedersachsen_ALKS_ODR_sample_offset_impression-01.png",
+          "@value": "./media/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_impression-01.png",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -360,7 +360,7 @@
           "@type": "xsd:string"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_impression-01.png",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_impression-01.png",
           "@type": "xsd:string"
         }
       }
@@ -378,7 +378,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./media/TestfeldNiedersachsen_ALKS_ODR_sample_offset_impression-02.png",
+          "@value": "./media/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_impression-02.png",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -386,7 +386,7 @@
           "@type": "xsd:string"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_impression-02.png",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_impression-02.png",
           "@type": "xsd:string"
         }
       }
@@ -404,7 +404,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./media/TestfeldNiedersachsen_ALKS_ODR_sample_offset_impression-03.png",
+          "@value": "./media/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_impression-03.png",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -412,7 +412,7 @@
           "@type": "xsd:string"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_impression-03.png",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_impression-03.png",
           "@type": "xsd:string"
         }
       }
@@ -716,7 +716,7 @@
       "manifest:hasFileMetadata": {
         "@type": "manifest:FileMetadata",
         "manifest:filePath": {
-          "@value": "./validation-reports/TestfeldNiedersachsen_ALKS_ODR_sample_offset_openmsl_cb_xodr_QCReport.txt",
+          "@value": "./validation-reports/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_openmsl_cb_xodr_QCReport.txt",
           "@type": "xsd:anyURI"
         },
         "manifest:mimeType": {
@@ -724,7 +724,7 @@
           "@type": "xsd:string"
         },
         "manifest:filename": {
-          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset_openmsl_cb_xodr_QCReport.txt",
+          "@value": "Testfeld_Niedersachsen_ALKS_xodr_sample_offset_openmsl_cb_xodr_QCReport.txt",
           "@type": "xsd:string"
         }
       }

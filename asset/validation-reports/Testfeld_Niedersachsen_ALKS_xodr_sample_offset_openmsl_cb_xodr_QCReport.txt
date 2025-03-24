@@ -1,0 +1,723 @@
+====================================================================================================
+QC4OpenX - Pooled results
+====================================================================================================
+
+InputFile: Testfeld_Niedersachsen_ALKS_xodr_sample_offset.xodr
+
+====================================================================================================
+    CheckerBundle:  xodrBundle
+    Build date:     2025-03-10
+    Build version:  v1.0.0-rc.1
+    Description:    OpenMSL OpenDrive checker bundle
+    Summary:        13 checker(s) are executed. 13 checker(s) are completed. 0 checker(s) are skipped. 0 checker(s) have internal error and 0 checker(s) do not contain status.
+    Parameters:     InputFile = E:/Test/uploads/Testfeld_Niedersachsen_ALKS_xodr_sample_offset.xodr
+                    resultFile = E:/Test/output/Testfeld_Niedersachsen_ALKS_xodr_sample_offset/validation/Testfeld_Niedersachsen_ALKS_xodr_sample_offset_openmsl_cb_xodr.xqar
+
+
+    Checker:        check_openmsl_xodr_junction_connection_lane_link_id
+    Description:    linked Lane shall exist in connected LaneSection
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_link_id
+
+    Checker:        check_openmsl_xodr_junction_connection_lane_linkage_oder
+    Description:    Lane Links of Junction Connections should be ordered from left to right
+    Status:         completed
+    Summary:        6 issue(s) are found.
+        Warning:    #0: junction 21 Connection 0 has invalid lane order for laneFrom: -2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+                    junction 21 Connection 0 has invalid lane order for laneFrom: -2
+                       XPath: /OpenDRIVE/junction[1]/connection[1]/laneLink[2]
+        Warning:    #1: junction 21 Connection 1 has invalid lane order for laneFrom: -1
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+                    junction 21 Connection 1 has invalid lane order for laneFrom: -1
+                       XPath: /OpenDRIVE/junction[1]/connection[2]/laneLink[2]
+        Warning:    #2: junction 1 Connection 0 has invalid lane order for laneFrom: -1
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+                    junction 1 Connection 0 has invalid lane order for laneFrom: -1
+                       XPath: /OpenDRIVE/junction[2]/connection[1]/laneLink[2]
+        Warning:    #3: junction 1 Connection 1 has invalid lane order for laneFrom: -5
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+                    junction 1 Connection 1 has invalid lane order for laneFrom: -5
+                       XPath: /OpenDRIVE/junction[2]/connection[2]/laneLink[2]
+        Warning:    #4: junction 11 Connection 0 has invalid lane order for laneFrom: -6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+                    junction 11 Connection 0 has invalid lane order for laneFrom: -6
+                       XPath: /OpenDRIVE/junction[3]/connection[1]/laneLink[2]
+        Warning:    #5: junction 11 Connection 1 has invalid lane order for laneFrom: -1
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+                    junction 11 Connection 1 has invalid lane order for laneFrom: -1
+                       XPath: /OpenDRIVE/junction[3]/connection[2]/laneLink[2]
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+
+    Checker:        check_openmsl_xodr_junction_connection_road_linkage
+    Description:    Connection Roads need Predecessor and Successor. Connection Roads should be registered in Connection
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.semantic.junction_connection_road_linkage
+
+    Checker:        check_openmsl_xodr_road_lanesection_min_length
+    Description:    Length of lanesections shall be greater than epsilon
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.semantic.road_lanesection_min_length
+
+    Checker:        check_openmsl_xodr_road_lane_link_id
+    Description:    linked Lane shall exist in connected LaneSection
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.semantic.road_lane_link_id
+
+    Checker:        check_openmsl_xodr_road_lane_type_none
+    Description:    Lane Type shall not be None
+    Status:         completed
+    Summary:        83 issue(s) are found.
+        Warning:    #6: road 3000180 has invalid lanetype none in laneSection s=0.0 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 3000180 has invalid lanetype none in laneSection s=0.0 lane=2
+                       XPath: /OpenDRIVE/road[1]/lanes/laneSection/left/lane[1]
+                    road 3000180 has invalid lanetype none in laneSection s=0.0 lane=2
+                       Location: x=2891.48 y=4294.39 z=98.3508
+        Warning:    #7: road 3000440 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 3000440 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       XPath: /OpenDRIVE/road[2]/lanes/laneSection/right/lane[5]
+                    road 3000440 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       Location: x=2392.34 y=2619.62 z=94.5146
+        Warning:    #8: road 1003400 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1003400 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       XPath: /OpenDRIVE/road[3]/lanes/laneSection[1]/right/lane[4]
+                    road 1003400 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       Location: x=2942.71 y=4575.67 z=98.5124
+        Warning:    #9: road 1003400 has invalid lanetype none in laneSection s=46.9458860069 lane=-5
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1003400 has invalid lanetype none in laneSection s=46.9458860069 lane=-5
+                       XPath: /OpenDRIVE/road[3]/lanes/laneSection[2]/right/lane[5]
+                    road 1003400 has invalid lanetype none in laneSection s=46.9458860069 lane=-5
+                       Location: x=2932.58 y=4529.88 z=98.3036
+        Warning:    #10: road 1003400 has invalid lanetype none in laneSection s=120.7368344413 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1003400 has invalid lanetype none in laneSection s=120.7368344413 lane=2
+                       XPath: /OpenDRIVE/road[3]/lanes/laneSection[3]/left/lane[1]
+                    road 1003400 has invalid lanetype none in laneSection s=120.7368344413 lane=2
+                       Location: x=2929.26 y=4454.99 z=98.3898
+        Warning:    #11: road 1003400 has invalid lanetype none in laneSection s=120.7368344413 lane=-5
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1003400 has invalid lanetype none in laneSection s=120.7368344413 lane=-5
+                       XPath: /OpenDRIVE/road[3]/lanes/laneSection[3]/right/lane[5]
+                    road 1003400 has invalid lanetype none in laneSection s=120.7368344413 lane=-5
+                       Location: x=2914.87 y=4458.25 z=97.9988
+        Warning:    #12: road 1003400 has invalid lanetype none in laneSection s=249.1731744511 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1003400 has invalid lanetype none in laneSection s=249.1731744511 lane=2
+                       XPath: /OpenDRIVE/road[3]/lanes/laneSection[4]/left/lane[1]
+                    road 1003400 has invalid lanetype none in laneSection s=249.1731744511 lane=2
+                       Location: x=2900.03 y=4329.89 z=98.3171
+        Warning:    #13: road 1003400 has invalid lanetype none in laneSection s=249.1731744511 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1003400 has invalid lanetype none in laneSection s=249.1731744511 lane=-6
+                       XPath: /OpenDRIVE/road[3]/lanes/laneSection[4]/right/lane[6]
+                    road 1003400 has invalid lanetype none in laneSection s=249.1731744511 lane=-6
+                       Location: x=2884.94 y=4333.52 z=97.8968
+        Warning:    #14: road 1004100 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004100 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       XPath: /OpenDRIVE/road[4]/lanes/laneSection/right/lane[5]
+                    road 1004100 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       Location: x=2388.72 y=2610.29 z=94.4432
+        Warning:    #15: road 3000470 has invalid lanetype none in laneSection s=0.0 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 3000470 has invalid lanetype none in laneSection s=0.0 lane=2
+                       XPath: /OpenDRIVE/road[5]/lanes/laneSection/left/lane[1]
+                    road 3000470 has invalid lanetype none in laneSection s=0.0 lane=2
+                       Location: x=2573.25 y=3135.02 z=96.8968
+        Warning:    #16: road 1004200 has invalid lanetype none in laneSection s=0.0 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004200 has invalid lanetype none in laneSection s=0.0 lane=2
+                       XPath: /OpenDRIVE/road[6]/lanes/laneSection[1]/left/lane[1]
+                    road 1004200 has invalid lanetype none in laneSection s=0.0 lane=2
+                       Location: x=2403.21 y=2605.44 z=94.8495
+        Warning:    #17: road 1004200 has invalid lanetype none in laneSection s=35.4036855625 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004200 has invalid lanetype none in laneSection s=35.4036855625 lane=2
+                       XPath: /OpenDRIVE/road[6]/lanes/laneSection[2]/left/lane[1]
+                    road 1004200 has invalid lanetype none in laneSection s=35.4036855625 lane=2
+                       Location: x=2392.03 y=2571.85 z=94.6847
+        Warning:    #18: road 1004200 has invalid lanetype none in laneSection s=35.4036855625 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004200 has invalid lanetype none in laneSection s=35.4036855625 lane=-4
+                       XPath: /OpenDRIVE/road[6]/lanes/laneSection[2]/right/lane[4]
+                    road 1004200 has invalid lanetype none in laneSection s=35.4036855625 lane=-4
+                       Location: x=2379.32 y=2576.09 z=94.4916
+        Warning:    #19: road 1004200 has invalid lanetype none in laneSection s=158.995328704 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004200 has invalid lanetype none in laneSection s=158.995328704 lane=2
+                       XPath: /OpenDRIVE/road[6]/lanes/laneSection[3]/left/lane[1]
+                    road 1004200 has invalid lanetype none in laneSection s=158.995328704 lane=2
+                       Location: x=2352.41 y=2454.77 z=94.3503
+        Warning:    #20: road 1004700 has invalid lanetype none in laneSection s=0.0 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004700 has invalid lanetype none in laneSection s=0.0 lane=2
+                       XPath: /OpenDRIVE/road[7]/lanes/laneSection[1]/left/lane[1]
+                    road 1004700 has invalid lanetype none in laneSection s=0.0 lane=2
+                       Location: x=2630.23 y=3369.86 z=97.912
+        Warning:    #21: road 1004700 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004700 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       XPath: /OpenDRIVE/road[7]/lanes/laneSection[1]/right/lane[4]
+                    road 1004700 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       Location: x=2618.43 y=3373.3 z=97.5875
+        Warning:    #22: road 1004700 has invalid lanetype none in laneSection s=91.6152442585 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004700 has invalid lanetype none in laneSection s=91.6152442585 lane=2
+                       XPath: /OpenDRIVE/road[7]/lanes/laneSection[2]/left/lane[1]
+                    road 1004700 has invalid lanetype none in laneSection s=91.6152442585 lane=2
+                       Location: x=2604.39 y=3281.97 z=97.3393
+        Warning:    #23: road 1004700 has invalid lanetype none in laneSection s=91.6152442585 lane=-3
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004700 has invalid lanetype none in laneSection s=91.6152442585 lane=-3
+                       XPath: /OpenDRIVE/road[7]/lanes/laneSection[2]/right/lane[3]
+                    road 1004700 has invalid lanetype none in laneSection s=91.6152442585 lane=-3
+                       Location: x=2595.81 y=3284.47 z=97.1078
+        Warning:    #24: road 1004700 has invalid lanetype none in laneSection s=165.9643356671 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004700 has invalid lanetype none in laneSection s=165.9643356671 lane=2
+                       XPath: /OpenDRIVE/road[7]/lanes/laneSection[3]/left/lane[1]
+                    road 1004700 has invalid lanetype none in laneSection s=165.9643356671 lane=2
+                       Location: x=2584.18 y=3210.57 z=96.9902
+        Warning:    #25: road 1004700 has invalid lanetype none in laneSection s=165.9643356671 lane=-3
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004700 has invalid lanetype none in laneSection s=165.9643356671 lane=-3
+                       XPath: /OpenDRIVE/road[7]/lanes/laneSection[3]/right/lane[3]
+                    road 1004700 has invalid lanetype none in laneSection s=165.9643356671 lane=-3
+                       Location: x=2575.92 y=3212.61 z=96.7809
+        Warning:    #26: road 1004700 has invalid lanetype none in laneSection s=166.1668423772 lane=-3
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004700 has invalid lanetype none in laneSection s=166.1668423772 lane=-3
+                       XPath: /OpenDRIVE/road[7]/lanes/laneSection[4]/right/lane[3]
+                    road 1004700 has invalid lanetype none in laneSection s=166.1668423772 lane=-3
+                       Location: x=2575.87 y=3212.42 z=96.7802
+        Warning:    #27: road 1000100 has invalid lanetype none in laneSection s=0.0 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=0.0 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[1]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=0.0 lane=2
+                       Location: x=2571.15 y=3128.13 z=96.8759
+        Warning:    #28: road 1000100 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[1]/right/lane[5]
+                    road 1000100 has invalid lanetype none in laneSection s=0.0 lane=-5
+                       Location: x=2556.59 y=3132.62 z=96.4798
+        Warning:    #29: road 1000100 has invalid lanetype none in laneSection s=176.4909785948 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=176.4909785948 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[2]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=176.4909785948 lane=2
+                       Location: x=2518.5 y=2959.65 z=96.2068
+        Warning:    #30: road 1000100 has invalid lanetype none in laneSection s=176.4909785948 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=176.4909785948 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[2]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=176.4909785948 lane=-7
+                       Location: x=2504.46 y=2964.11 z=95.8005
+        Warning:    #31: road 1000100 has invalid lanetype none in laneSection s=177.600614965 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=177.600614965 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[3]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=177.600614965 lane=2
+                       Location: x=2518.16 y=2958.59 z=96.2032
+        Warning:    #32: road 1000100 has invalid lanetype none in laneSection s=177.600614965 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=177.600614965 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[3]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=177.600614965 lane=-7
+                       Location: x=2504.11 y=2963.06 z=95.7933
+        Warning:    #33: road 1000100 has invalid lanetype none in laneSection s=265.8100035851 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=265.8100035851 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[4]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=265.8100035851 lane=2
+                       Location: x=2491.29 y=2874.57 z=95.8724
+        Warning:    #34: road 1000100 has invalid lanetype none in laneSection s=265.8100035851 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=265.8100035851 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[4]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=265.8100035851 lane=-7
+                       Location: x=2477.21 y=2879.09 z=95.4683
+        Warning:    #35: road 1000100 has invalid lanetype none in laneSection s=315.0432848677 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=315.0432848677 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[5]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=315.0432848677 lane=2
+                       Location: x=2476.2 y=2827.7 z=95.6952
+        Warning:    #36: road 1000100 has invalid lanetype none in laneSection s=315.0432848677 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=315.0432848677 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[5]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=315.0432848677 lane=-7
+                       Location: x=2461.45 y=2832.46 z=95.251
+        Warning:    #37: road 1000100 has invalid lanetype none in laneSection s=315.1933307473 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=315.1933307473 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[6]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=315.1933307473 lane=2
+                       Location: x=2476.15 y=2827.56 z=95.6946
+        Warning:    #38: road 1000100 has invalid lanetype none in laneSection s=315.1933307473 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=315.1933307473 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[6]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=315.1933307473 lane=-7
+                       Location: x=2461.4 y=2832.32 z=95.2503
+        Warning:    #39: road 1000100 has invalid lanetype none in laneSection s=330.5163397283 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=330.5163397283 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[7]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=330.5163397283 lane=2
+                       Location: x=2471.43 y=2812.98 z=95.6372
+        Warning:    #40: road 1000100 has invalid lanetype none in laneSection s=330.5163397283 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=330.5163397283 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[7]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=330.5163397283 lane=-7
+                       Location: x=2457.43 y=2817.51 z=95.2199
+        Warning:    #41: road 1000100 has invalid lanetype none in laneSection s=331.6187522176 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=331.6187522176 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[8]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=331.6187522176 lane=2
+                       Location: x=2471.09 y=2811.93 z=95.6332
+        Warning:    #42: road 1000100 has invalid lanetype none in laneSection s=363.5075432686 lane=4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=363.5075432686 lane=4
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[13]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=363.5075432686 lane=4
+                       Location: x=2461.34 y=2781.56 z=95.516
+        Warning:    #43: road 1000100 has invalid lanetype none in laneSection s=363.9994925097 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=363.9994925097 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[14]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=363.9994925097 lane=2
+                       Location: x=2461.11 y=2781.12 z=95.5121
+        Warning:    #44: road 1000100 has invalid lanetype none in laneSection s=370.7833669163 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=370.7833669163 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[15]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=370.7833669163 lane=2
+                       Location: x=2458.99 y=2774.67 z=95.4861
+        Warning:    #45: road 1000100 has invalid lanetype none in laneSection s=370.7833669163 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=370.7833669163 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[15]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=370.7833669163 lane=-7
+                       Location: x=2445.1 y=2779.19 z=95.0902
+        Warning:    #46: road 1000100 has invalid lanetype none in laneSection s=403.1506617924 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=403.1506617924 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[16]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=403.1506617924 lane=2
+                       Location: x=2448.93 y=2743.9 z=95.366
+        Warning:    #47: road 1000100 has invalid lanetype none in laneSection s=403.1506617924 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=403.1506617924 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[16]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=403.1506617924 lane=-7
+                       Location: x=2433.99 y=2748.79 z=94.9486
+        Warning:    #48: road 1000100 has invalid lanetype none in laneSection s=403.3007615135 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=403.3007615135 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[17]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=403.3007615135 lane=2
+                       Location: x=2448.88 y=2743.76 z=95.3654
+        Warning:    #49: road 1000100 has invalid lanetype none in laneSection s=403.3007615135 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=403.3007615135 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[17]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=403.3007615135 lane=-7
+                       Location: x=2433.92 y=2748.66 z=94.9473
+        Warning:    #50: road 1000100 has invalid lanetype none in laneSection s=403.8146976855 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=403.8146976855 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[18]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=403.8146976855 lane=2
+                       Location: x=2448.72 y=2743.27 z=95.3635
+        Warning:    #51: road 1000100 has invalid lanetype none in laneSection s=403.8146976855 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=403.8146976855 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[18]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=403.8146976855 lane=-7
+                       Location: x=2433.68 y=2748.2 z=94.943
+        Warning:    #52: road 1000100 has invalid lanetype none in laneSection s=403.9617323989 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=403.9617323989 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[19]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=403.9617323989 lane=2
+                       Location: x=2448.68 y=2743.13 z=95.363
+        Warning:    #53: road 1000100 has invalid lanetype none in laneSection s=403.9617323989 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=403.9617323989 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[19]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=403.9617323989 lane=-7
+                       Location: x=2434.27 y=2747.85 z=94.9603
+        Warning:    #54: road 1000100 has invalid lanetype none in laneSection s=472.3703686125 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=472.3703686125 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[20]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=472.3703686125 lane=2
+                       Location: x=2427.3 y=2678.14 z=95.1188
+        Warning:    #55: road 1000100 has invalid lanetype none in laneSection s=472.3703686125 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=472.3703686125 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[20]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=472.3703686125 lane=-7
+                       Location: x=2412.23 y=2683.12 z=94.6768
+        Warning:    #56: road 1000100 has invalid lanetype none in laneSection s=472.5204268191 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=472.5204268191 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[21]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=472.5204268191 lane=2
+                       Location: x=2427.26 y=2678 z=95.1182
+        Warning:    #57: road 1000100 has invalid lanetype none in laneSection s=472.5204268191 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=472.5204268191 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[21]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=472.5204268191 lane=-7
+                       Location: x=2412.19 y=2682.98 z=94.6764
+        Warning:    #58: road 1000100 has invalid lanetype none in laneSection s=473.0297535028 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=473.0297535028 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[22]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=473.0297535028 lane=2
+                       Location: x=2427.1 y=2677.51 z=95.1164
+        Warning:    #59: road 1000100 has invalid lanetype none in laneSection s=473.0297535028 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=473.0297535028 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[22]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=473.0297535028 lane=-7
+                       Location: x=2412.05 y=2682.49 z=94.6752
+        Warning:    #60: road 1000100 has invalid lanetype none in laneSection s=473.1798043251 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=473.1798043251 lane=2
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[23]/left/lane[1]
+                    road 1000100 has invalid lanetype none in laneSection s=473.1798043251 lane=2
+                       Location: x=2427.05 y=2677.37 z=95.1159
+        Warning:    #61: road 1000100 has invalid lanetype none in laneSection s=473.1798043251 lane=-7
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000100 has invalid lanetype none in laneSection s=473.1798043251 lane=-7
+                       XPath: /OpenDRIVE/road[8]/lanes/laneSection[23]/right/lane[7]
+                    road 1000100 has invalid lanetype none in laneSection s=473.1798043251 lane=-7
+                       Location: x=2412.66 y=2682.13 z=94.6938
+        Warning:    #62: road 1000400 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000400 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       XPath: /OpenDRIVE/road[9]/lanes/laneSection[1]/right/lane[4]
+                    road 1000400 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       Location: x=2871.03 y=4289.05 z=97.8673
+        Warning:    #63: road 1000400 has invalid lanetype none in laneSection s=53.4123301716 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000400 has invalid lanetype none in laneSection s=53.4123301716 lane=2
+                       XPath: /OpenDRIVE/road[9]/lanes/laneSection[2]/left/lane[1]
+                    road 1000400 has invalid lanetype none in laneSection s=53.4123301716 lane=2
+                       Location: x=2865.43 y=4235.4 z=98.2314
+        Warning:    #64: road 1000400 has invalid lanetype none in laneSection s=53.4123301716 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000400 has invalid lanetype none in laneSection s=53.4123301716 lane=-4
+                       XPath: /OpenDRIVE/road[9]/lanes/laneSection[2]/right/lane[4]
+                    road 1000400 has invalid lanetype none in laneSection s=53.4123301716 lane=-4
+                       Location: x=2854.98 y=4238.71 z=97.9129
+        Warning:    #65: road 1000400 has invalid lanetype none in laneSection s=53.8593184394 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000400 has invalid lanetype none in laneSection s=53.8593184394 lane=2
+                       XPath: /OpenDRIVE/road[9]/lanes/laneSection[3]/left/lane[1]
+                    road 1000400 has invalid lanetype none in laneSection s=53.8593184394 lane=2
+                       Location: x=2865.04 y=4235.06 z=98.2236
+        Warning:    #66: road 1000400 has invalid lanetype none in laneSection s=53.8593184394 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1000400 has invalid lanetype none in laneSection s=53.8593184394 lane=-4
+                       XPath: /OpenDRIVE/road[9]/lanes/laneSection[3]/right/lane[4]
+                    road 1000400 has invalid lanetype none in laneSection s=53.8593184394 lane=-4
+                       Location: x=2854.85 y=4238.28 z=97.9136
+        Warning:    #67: road 3000430 has invalid lanetype none in laneSection s=0.0 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 3000430 has invalid lanetype none in laneSection s=0.0 lane=2
+                       XPath: /OpenDRIVE/road[10]/lanes/laneSection/left/lane[1]
+                    road 3000430 has invalid lanetype none in laneSection s=0.0 lane=2
+                       Location: x=2406.38 y=2614.93 z=94.8651
+        Warning:    #68: road 3000480 has invalid lanetype none in laneSection s=0.0 lane=-3
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 3000480 has invalid lanetype none in laneSection s=0.0 lane=-3
+                       XPath: /OpenDRIVE/road[11]/lanes/laneSection/right/lane[3]
+                    road 3000480 has invalid lanetype none in laneSection s=0.0 lane=-3
+                       Location: x=2558.47 y=3139.55 z=96.4967
+        Warning:    #69: road 1004600 has invalid lanetype none in laneSection s=0.0 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=0.0 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[1]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=0.0 lane=2
+                       Location: x=2889.12 y=4284.67 z=98.3676
+        Warning:    #70: road 1004600 has invalid lanetype none in laneSection s=53.4746052638 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=53.4746052638 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[2]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=53.4746052638 lane=2
+                       Location: x=2876.48 y=4232.71 z=98.5303
+        Warning:    #71: road 1004600 has invalid lanetype none in laneSection s=53.4746052638 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=53.4746052638 lane=-4
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[2]/right/lane[4]
+                    road 1004600 has invalid lanetype none in laneSection s=53.4746052638 lane=-4
+                       Location: x=2865.56 y=4235.37 z=98.2304
+        Warning:    #72: road 1004600 has invalid lanetype none in laneSection s=53.8544139403 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=53.8544139403 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[3]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=53.8544139403 lane=2
+                       Location: x=2876.39 y=4232.34 z=98.5317
+        Warning:    #73: road 1004600 has invalid lanetype none in laneSection s=53.8544139403 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=53.8544139403 lane=-6
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[3]/right/lane[6]
+                    road 1004600 has invalid lanetype none in laneSection s=53.8544139403 lane=-6
+                       Location: x=2865.6 y=4234.97 z=98.2351
+        Warning:    #74: road 1004600 has invalid lanetype none in laneSection s=248.3390056326 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=248.3390056326 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[4]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=248.3390056326 lane=2
+                       Location: x=2829.26 y=4043.62 z=99.4
+        Warning:    #75: road 1004600 has invalid lanetype none in laneSection s=248.3390056326 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=248.3390056326 lane=-6
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[4]/right/lane[6]
+                    road 1004600 has invalid lanetype none in laneSection s=248.3390056326 lane=-6
+                       Location: x=2818.02 y=4046.5 z=99.0878
+        Warning:    #76: road 1004600 has invalid lanetype none in laneSection s=515.6429771559 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=515.6429771559 lane=-6
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[5]/right/lane[6]
+                    road 1004600 has invalid lanetype none in laneSection s=515.6429771559 lane=-6
+                       Location: x=2749.82 y=3788.16 z=99.6695
+        Warning:    #77: road 1004600 has invalid lanetype none in laneSection s=515.9685147215 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=515.9685147215 lane=-6
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[6]/right/lane[6]
+                    road 1004600 has invalid lanetype none in laneSection s=515.9685147215 lane=-6
+                       Location: x=2749.73 y=3787.85 z=99.6696
+        Warning:    #78: road 1004600 has invalid lanetype none in laneSection s=516.9120275393 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=516.9120275393 lane=-6
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[7]/right/lane[6]
+                    road 1004600 has invalid lanetype none in laneSection s=516.9120275393 lane=-6
+                       Location: x=2749.48 y=3786.94 z=99.6699
+        Warning:    #79: road 1004600 has invalid lanetype none in laneSection s=520.2249610212 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=520.2249610212 lane=-6
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[8]/right/lane[6]
+                    road 1004600 has invalid lanetype none in laneSection s=520.2249610212 lane=-6
+                       Location: x=2748.6 y=3783.75 z=99.6706
+        Warning:    #80: road 1004600 has invalid lanetype none in laneSection s=586.699314628 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=586.699314628 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[14]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=586.699314628 lane=2
+                       Location: x=2742.49 y=3716.52 z=99.8922
+        Warning:    #81: road 1004600 has invalid lanetype none in laneSection s=592.7486503185 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=592.7486503185 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[15]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=592.7486503185 lane=2
+                       Location: x=2740.85 y=3710.7 z=99.8862
+        Warning:    #82: road 1004600 has invalid lanetype none in laneSection s=592.7486503185 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=592.7486503185 lane=-6
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[15]/right/lane[6]
+                    road 1004600 has invalid lanetype none in laneSection s=592.7486503185 lane=-6
+                       Location: x=2729.56 y=3713.81 z=99.6087
+        Warning:    #83: road 1004600 has invalid lanetype none in laneSection s=1115.3578279831 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=1115.3578279831 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[16]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=1115.3578279831 lane=2
+                       Location: x=2595.7 y=3208.58 z=97.2407
+        Warning:    #84: road 1004600 has invalid lanetype none in laneSection s=1115.3578279831 lane=-6
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=1115.3578279831 lane=-6
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[16]/right/lane[6]
+                    road 1004600 has invalid lanetype none in laneSection s=1115.3578279831 lane=-6
+                       Location: x=2585 y=3211.85 z=96.9725
+        Warning:    #85: road 1004600 has invalid lanetype none in laneSection s=1116.6755703758 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=1116.6755703758 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[17]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=1116.6755703758 lane=2
+                       Location: x=2595.32 y=3207.32 z=97.2341
+        Warning:    #86: road 1004600 has invalid lanetype none in laneSection s=1116.6755703758 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=1116.6755703758 lane=-4
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[17]/right/lane[4]
+                    road 1004600 has invalid lanetype none in laneSection s=1116.6755703758 lane=-4
+                       Location: x=2584.75 y=3210.55 z=96.9686
+        Warning:    #87: road 1004600 has invalid lanetype none in laneSection s=1117.007532276 lane=2
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 1004600 has invalid lanetype none in laneSection s=1117.007532276 lane=2
+                       XPath: /OpenDRIVE/road[12]/lanes/laneSection[18]/left/lane[1]
+                    road 1004600 has invalid lanetype none in laneSection s=1117.007532276 lane=2
+                       Location: x=2595.22 y=3207 z=97.2324
+        Warning:    #88: road 3000170 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       ruleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+                    road 3000170 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       XPath: /OpenDRIVE/road[13]/lanes/laneSection/right/lane[4]
+                    road 3000170 has invalid lanetype none in laneSection s=0.0 lane=-4
+                       Location: x=2874.16 y=4298.57 z=97.8828
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+
+    Checker:        check_openmsl_xodr_road_signal_object_lane_linkage
+    Description:    Linked Lanes should exist and orientation should match with driving direction
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.semantic.signal_object_lane_linkage
+
+    Checker:        check_openmsl_xodr_road_geometry_length
+    Description:    Length of geometry elements shall be greater than epsilon and need to match with start of next element
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.geometry.length
+
+    Checker:        check_openmsl_xodr_road_geometry_parampoly3_attributes
+    Description:    ParamPoly3 parameters @aU, @aV and @bV shall be zero, @bU shall be > 0
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.geometry.parampoly3.attributes
+
+    Checker:        check_openmsl_xodr_road_min_length
+    Description:    Road Length shall be greater than epsilon
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.min_length
+
+    Checker:        check_openmsl_xodr_crg_reference
+    Description:    check reference to OpenCRG files
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.linkage.crg_reference
+
+    Checker:        check_openmsl_xodr_road_type_vs_speed_limit
+    Description:    Speed Limit of Lanes should match with road type
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:road.road_type_vs_speed_limit
+
+    Checker:        check_openmsl_xodr_statistic
+    Description:    Prints some infos about OpenDrive file
+    Status:         completed
+    Summary:        5 issue(s) are found.
+        Info:       #89: Number of roads: 13
+                       ruleUID: openmsl.net:xodr:1.4.0:statistic
+                    Number of roads: 13
+                       XPath: /OpenDRIVE/road[1]
+        Info:       #90: Number of junctions: 3
+                       ruleUID: openmsl.net:xodr:1.4.0:statistic
+                    Number of junctions: 3
+                       XPath: /OpenDRIVE/road[1]
+        Info:       #91: RoadNetwork length: 2681.466561437124 m
+                       ruleUID: openmsl.net:xodr:1.4.0:statistic
+                    RoadNetwork length: 2681.466561437124 m
+                       XPath: /OpenDRIVE/road[1]
+        Info:       #92: Number of signals: 0
+                       ruleUID: openmsl.net:xodr:1.4.0:statistic
+                    Number of signals: 0
+                       XPath: /OpenDRIVE/road[1]
+        Info:       #93: Number of objects: 0
+                       ruleUID: openmsl.net:xodr:1.4.0:statistic
+                    Number of objects: 0
+                       XPath: /OpenDRIVE/road[1]
+
+        Addressed Rules:        
+        - rule:         openmsl.net:xodr:1.4.0:statistic
+====================================================================================================
+
+Rules report 
+
+
+Total number of addressed rules:   13
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.geometry.length
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.geometry.parampoly3.attributes
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.linkage.crg_reference
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.min_length
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.road_type_vs_speed_limit
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_link_id
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_road_linkage
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.semantic.road_lane_link_id
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.semantic.road_lanesection_min_length
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:road.semantic.signal_object_lane_linkage
+
+	-> Addressed RuleUID: openmsl.net:xodr:1.4.0:statistic
+
+Total number of rules with found issues:    3
+
+Rules for information:               1
+	-> RuleUID with info: openmsl.net:xodr:1.4.0:statistic
+Rules with warning issues:            2
+	-> RuleUID with warning issue: openmsl.net:xodr:1.4.0:road.semantic.junction_connection_lane_linkage_oder
+	-> RuleUID with warning issue: openmsl.net:xodr:1.4.0:road.semantic.lane_type.none
+Rules with error issues:              0
+====================================================================================================
+
+====================================================================================================
+
+Note
+
+Rule UID format:
+    <emanating-entity>:<standard>:x.y.z:rule_set.for_rules.rule_name
+
+where    
+    Emanating Entity: a domain name for the entity (organization or company) that declares the rule UID
+    Standard: a short string that represents the standard or the domain to which the rule is applied
+    Definition Setting: the version of the standard or the domain to which the rule appears or is applied for the first time
+    Rule Full Name: the full name of the rule, as dot separated, snake lower case string. 
+        The full name of a rule is composed by the rule set, a categorization for the rule, 
+        and the rule name, a unique string inside the categorization. 
+        The rule set can be nested (meaning that can be defined as an 
+        arbitrary sequence of dot separated names, while the name is the snake 
+        case string after the last dot of the full name)
+
+====================================================================================================
+
