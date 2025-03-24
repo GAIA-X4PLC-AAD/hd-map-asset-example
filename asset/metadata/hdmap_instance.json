@@ -14,11 +14,11 @@
   "hdmap:hasDataResource": {
     "@type": "envited-x:DataResource",
     "gx:name": {
-      "@value": "TestfeldNiedersachsen_ALKS_ODR_sample",
+      "@value": "Testfeld Niedersachsen ALKS xodr sample",
       "@type": "xsd:string"
     },
     "gx:description": {
-      "@value": "simple hdmap example file on Testfeld Niedersachsen for ALKS scenario",
+      "@value": "Simple hdmap example file on the Testfeld Niedersachsen suitable for ALKS scenarios",
       "@type": "xsd:string"
     }
   },
