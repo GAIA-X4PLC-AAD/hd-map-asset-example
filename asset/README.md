@@ -1,6 +1,6 @@
-# TestfeldNiedersachsen_ALKS_ODR_sample
+# Testfeld Niedersachsen ALKS xodr sample
 
-simple hdmap example file on Testfeld Niedersachsen for ALKS scenario
+Simple hdmap example file on the Testfeld Niedersachsen suitable for ALKS scenarios.
 
 ## Digital Assets
 
